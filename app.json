@@ -1,0 +1,45 @@
+{
+    "id": "c9a338d6-59c6-4090-9223-76e4ca915bcf",
+    "name": "EducationAffiliates",
+    "publisher": "Incite Automation",
+    "version": "1.0.0.0",
+    "brief": "",
+    "description": "",
+    "privacyStatement": "",
+    "EULA": "",
+    "help": "",
+    "url": "",
+    "logo": "",
+    "dependencies": [
+      {
+            "id": "b3780cd9-f8f8-4a83-a4d5-0c2ad87b28af",
+            "name": "Sustainability",
+            "publisher": "Microsoft",
+            "version": "27.5.46862.46929"
+        },
+        {
+            "id": "ea130081-c669-460f-a5f4-5dde14f03131",
+            "name": "Statistical Accounts",
+            "publisher": "Microsoft",
+            "version": "27.5.46862.46929"
+        }
+    ],
+    "screenshots": [],
+    "platform": "1.0.0.0",
+    "application": "27.0.0.0",
+    "idRanges": [
+        {
+            "from": 50100,
+            "to": 50149
+        }
+    ],
+    "resourceExposurePolicy": {
+        "allowDebugging": true,
+        "allowDownloadingSource": true,
+        "includeSourceInSymbolFile": true
+    },
+    "runtime": "16.0",
+    "features": [
+        "NoImplicitWith"
+    ]
+}
