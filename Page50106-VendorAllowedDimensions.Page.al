@@ -10,6 +10,7 @@ page 50125 "Vendor Allowed Dim Values API"
     SourceTable = "Dim. Value per Account";
     DelayedInsert = true;
     ODataKeyFields = SystemId;
+    SourceTableView = where("Dimension Code" = const('COMPANY'));
 
     layout
     {
