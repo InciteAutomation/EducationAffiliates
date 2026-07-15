@@ -1,15 +1,3 @@
-namespace Microsoft.API.V2;
-
-using Microsoft.Finance.Dimension;
-using Microsoft.Finance.GeneralLedger.Journal;
-using Microsoft.Finance.GeneralLedger.Ledger;
-using Microsoft.Integration.Entity;
-using Microsoft.Projects.TimeSheet;
-using Microsoft.Purchases.Document;
-using Microsoft.Purchases.History;
-using Microsoft.Sales.Document;
-using Microsoft.Sales.History;
-
 page 50100 "APIV2 - Dimension Set Lines"
 {
     APIVersion = 'v2.0';
