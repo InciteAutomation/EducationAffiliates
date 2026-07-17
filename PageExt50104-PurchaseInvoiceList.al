@@ -14,6 +14,11 @@ pageextension 50104 "PI List Extension" extends "Purchase Invoices"
                 ApplicationArea = All;
                 Caption = 'Jaggaer IN NBR';
             }
+            field("Created At"; Rec.SystemCreatedAt)
+            {
+                ApplicationArea = All;
+                Caption = 'Created Date';
+            }
         }
     }
 }

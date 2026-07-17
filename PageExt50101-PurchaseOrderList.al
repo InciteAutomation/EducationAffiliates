@@ -6,5 +6,14 @@ pageextension 50101 "PO List Extension" extends "Purchase Order List"
         {
             Caption = 'Jaggaer PO Number';
         }
+
+        addafter("Amount Including VAT")
+        {
+            field("Created At"; Rec.SystemCreatedAt)
+            {
+                ApplicationArea = All;
+                Caption = 'Created Date';
+            }
+        }
     }
 }
