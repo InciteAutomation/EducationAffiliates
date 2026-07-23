@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -25,75 +25,6 @@
         </Field>
         <Field Name="GenJnlLine_Line_No_">
           <DataField>GenJnlLine_Line_No_</DataField>
-        </Field>
-        <Field Name="EAVendorNo">
-          <DataField>EAVendorNo</DataField>
-        </Field>
-        <Field Name="EAExternalDocumentNo">
-          <DataField>EAExternalDocumentNo</DataField>
-        </Field>
-        <Field Name="EAAppliesToDocNo">
-          <DataField>EAAppliesToDocNo</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo1">
-          <DataField>EAFooterAppliesToDocNo1</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo2">
-          <DataField>EAFooterAppliesToDocNo2</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo3">
-          <DataField>EAFooterAppliesToDocNo3</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo4">
-          <DataField>EAFooterAppliesToDocNo4</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo5">
-          <DataField>EAFooterAppliesToDocNo5</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo6">
-          <DataField>EAFooterAppliesToDocNo6</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo7">
-          <DataField>EAFooterAppliesToDocNo7</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo8">
-          <DataField>EAFooterAppliesToDocNo8</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo9">
-          <DataField>EAFooterAppliesToDocNo9</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo10">
-          <DataField>EAFooterAppliesToDocNo10</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo1">
-          <DataField>EAFooterExternalDocumentNo1</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo2">
-          <DataField>EAFooterExternalDocumentNo2</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo3">
-          <DataField>EAFooterExternalDocumentNo3</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo4">
-          <DataField>EAFooterExternalDocumentNo4</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo5">
-          <DataField>EAFooterExternalDocumentNo5</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo6">
-          <DataField>EAFooterExternalDocumentNo6</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo7">
-          <DataField>EAFooterExternalDocumentNo7</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo8">
-          <DataField>EAFooterExternalDocumentNo8</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo9">
-          <DataField>EAFooterExternalDocumentNo9</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo10">
-          <DataField>EAFooterExternalDocumentNo10</DataField>
         </Field>
         <Field Name="CheckToAddr_1_">
           <DataField>CheckToAddr_1_</DataField>
@@ -232,42 +163,6 @@
         </Field>
         <Field Name="PrnChkCompanyAddr_CheckStyle__US_1_">
           <DataField>PrnChkCompanyAddr_CheckStyle__US_1_</DataField>
-        </Field>
-        <Field Name="EADueDate">
-          <DataField>EADueDate</DataField>
-        </Field>
-        <Field Name="EASelectedEntryCount">
-          <DataField>EASelectedEntryCount</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate1">
-          <DataField>EAFooterDueDate1</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate2">
-          <DataField>EAFooterDueDate2</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate3">
-          <DataField>EAFooterDueDate3</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate4">
-          <DataField>EAFooterDueDate4</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate5">
-          <DataField>EAFooterDueDate5</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate6">
-          <DataField>EAFooterDueDate6</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate7">
-          <DataField>EAFooterDueDate7</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate8">
-          <DataField>EAFooterDueDate8</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate9">
-          <DataField>EAFooterDueDate9</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate10">
-          <DataField>EAFooterDueDate10</DataField>
         </Field>
         <Field Name="TotalLineAmount">
           <DataField>TotalLineAmount</DataField>
@@ -698,8 +593,53 @@
         <Field Name="CheckNoText_Control1480000Caption">
           <DataField>CheckNoText_Control1480000Caption</DataField>
         </Field>
+        <Field Name="EAVendorNo">
+          <DataField>EAVendorNo</DataField>
+        </Field>
         <Field Name="EARowRefNbr">
           <DataField>EARowRefNbr</DataField>
+        </Field>
+        <Field Name="EAAppliesToDocNo">
+          <DataField>EAAppliesToDocNo</DataField>
+        </Field>
+        <Field Name="EAExternalDocumentNo">
+          <DataField>EAExternalDocumentNo</DataField>
+        </Field>
+        <Field Name="EADueDate">
+          <DataField>EADueDate</DataField>
+        </Field>
+        <Field Name="EASelectedEntryCount">
+          <DataField>EASelectedEntryCount</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo1">
+          <DataField>EAFooterAppliesToDocNo1</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo2">
+          <DataField>EAFooterAppliesToDocNo2</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo3">
+          <DataField>EAFooterAppliesToDocNo3</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo4">
+          <DataField>EAFooterAppliesToDocNo4</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo5">
+          <DataField>EAFooterAppliesToDocNo5</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo6">
+          <DataField>EAFooterAppliesToDocNo6</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo7">
+          <DataField>EAFooterAppliesToDocNo7</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo8">
+          <DataField>EAFooterAppliesToDocNo8</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo9">
+          <DataField>EAFooterAppliesToDocNo9</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo10">
+          <DataField>EAFooterAppliesToDocNo10</DataField>
         </Field>
         <Field Name="EAFooterAppliesToDocNo11">
           <DataField>EAFooterAppliesToDocNo11</DataField>
@@ -971,6 +911,36 @@
         <Field Name="EAFooterAppliesToDocNo100">
           <DataField>EAFooterAppliesToDocNo100</DataField>
         </Field>
+        <Field Name="EAFooterExternalDocumentNo1">
+          <DataField>EAFooterExternalDocumentNo1</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo2">
+          <DataField>EAFooterExternalDocumentNo2</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo3">
+          <DataField>EAFooterExternalDocumentNo3</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo4">
+          <DataField>EAFooterExternalDocumentNo4</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo5">
+          <DataField>EAFooterExternalDocumentNo5</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo6">
+          <DataField>EAFooterExternalDocumentNo6</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo7">
+          <DataField>EAFooterExternalDocumentNo7</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo8">
+          <DataField>EAFooterExternalDocumentNo8</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo9">
+          <DataField>EAFooterExternalDocumentNo9</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo10">
+          <DataField>EAFooterExternalDocumentNo10</DataField>
+        </Field>
         <Field Name="EAFooterExternalDocumentNo11">
           <DataField>EAFooterExternalDocumentNo11</DataField>
         </Field>
@@ -1240,6 +1210,36 @@
         </Field>
         <Field Name="EAFooterExternalDocumentNo100">
           <DataField>EAFooterExternalDocumentNo100</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate1">
+          <DataField>EAFooterDueDate1</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate2">
+          <DataField>EAFooterDueDate2</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate3">
+          <DataField>EAFooterDueDate3</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate4">
+          <DataField>EAFooterDueDate4</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate5">
+          <DataField>EAFooterDueDate5</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate6">
+          <DataField>EAFooterDueDate6</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate7">
+          <DataField>EAFooterDueDate7</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate8">
+          <DataField>EAFooterDueDate8</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate9">
+          <DataField>EAFooterDueDate9</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate10">
+          <DataField>EAFooterDueDate10</DataField>
         </Field>
         <Field Name="EAFooterDueDate11">
           <DataField>EAFooterDueDate11</DataField>
@@ -2753,7 +2753,7 @@
         <Height>0.87184in</Height>
         <Style />
       </Body>
-      <Width>8in</Width>
+      <Width>8.20258in</Width>
       <Page>
         <PageHeader>
           <Height>0.16656in</Height>
@@ -2780,7 +2780,7 @@
               </Paragraphs>
               <Left>1.20746in</Left>
               <Height>0.16656in</Height>
-              <Width>2.68006in</Width>
+              <Width>3.41744in</Width>
               <Style>
                 <BackgroundColor>White</BackgroundColor>
                 <VerticalAlign>Bottom</VerticalAlign>
@@ -3867,7 +3867,7 @@ ORDER OF</Value>
               <Top>4.3116in</Top>
               <Left>1.21007in</Left>
               <Height>0.16654in</Height>
-              <Width>2.68006in</Width>
+              <Width>3.40628in</Width>
               <ZIndex>38</ZIndex>
               <Style />
             </Textbox>
@@ -6324,13 +6324,14 @@ ORDER OF</Value>
                     <FontFamily>Times New Roman</FontFamily>
                     <FontSize>11pt</FontSize>
                     <FontWeight>Bold</FontWeight>
+                    <TextAlign>Right</TextAlign>
                   </Style>
                 </Paragraph>
               </Paragraphs>
               <Top>4.3116in</Top>
-              <Left>4.09436in</Left>
+              <Left>4.6249in</Left>
               <Height>0.16654in</Height>
-              <Width>2.48031in</Width>
+              <Width>1.94977in</Width>
               <ZIndex>123</ZIndex>
               <DataElementOutput>NoOutput</DataElementOutput>
               <Style>
