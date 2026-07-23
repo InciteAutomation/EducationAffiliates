@@ -40,6 +40,14 @@ page 50107 "Purchase Invoice API"
                 {
                     Caption = 'Vendor No.';
                 }
+                field("DocumentDate"; Rec."Document Date")
+                {
+                    Caption = 'Document Date';
+                    trigger OnValidate()
+                    begin
+                        WorkDate(Rec."Document Date");
+                    end;
+                }
                 field("ShipToCode"; Rec."Ship-to Code")
                 {
                     Caption = 'Ship To Code';
