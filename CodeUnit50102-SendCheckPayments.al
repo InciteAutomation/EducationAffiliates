@@ -26,17 +26,17 @@ codeunit 50102 "SendCheckPayments"
             exit;
 
         // Only the GENERAL / PAYMENT journal.
-        if not (
-            (GenJournalLine."Journal Template Name" = 'PAYMENT') and
-            (GenJournalLine."Journal Batch Name" = 'GENERAL'))
+        if not ((GenJournalLine."Journal Template Name" = 'PAYMENT'))
         then
             exit;
 
         if EnvironmentInformation.IsSandbox() then
-            Url :=
-                'https://default40a96b834e8b4d89969e20067e90f4.ac.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/20/workflows/cafae806c1dc46fa90c518661a05cd02/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Mof_n27eBYfFmmoGe9pTVxtqVHs3A6kfQvmL-joeSkM'
+            Url := 'https://default40a96b834e8b4d89969e20067e90f4.ac.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/20/workflows/cafae806c1dc46fa90c518661a05cd02/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=Mof_n27eBYfFmmoGe9pTVxtqVHs3A6kfQvmL-joeSkM'
         else
-            Url := '';
+            Url := 'https://default40a96b834e8b4d89969e20067e90f4.ac.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/14/workflows/e0f385e47b6d401ba2674414f89ccaca/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=-YopJUSBA6YEBdZLbfl4_WxarsgfamVgoJTG1s2T3Tk';
+
+        if Url = '' then
+            exit;
 
         TempGenJournalLine.Reset();
 
@@ -127,7 +127,8 @@ codeunit 50102 "SendCheckPayments"
         then
             exit(false);
 
-        if GenJournalLine."Payment Method Code" <> 'CHECK' then
+        if (GenJournalLine."Payment Method Code" = 'CHECK') or (GenJournalLine."Payment Method Code" = 'WIRE') or (GenJournalLine."Payment Method Code" = 'ACH') then begin
+        end else
             exit(false);
 
         if GenJournalLine."Applies-to Doc. Type" <>
