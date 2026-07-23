@@ -739,12 +739,14 @@ reportextension 50195 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
                 EAVendorNo);
 
             /*
-                The custom layout expects invoice entries.
+                Include both invoices and credit memos so RefNbr can be resolved
+                for either document type.
             */
-            VendorLedgerEntry.SetRange(
+            VendorLedgerEntry.SetFilter(
                 "Document Type",
-                VendorLedgerEntry."Document Type"::Invoice);
-
+                '%1|%2',
+                VendorLedgerEntry."Document Type"::Invoice,
+                VendorLedgerEntry."Document Type"::"Credit Memo");
             /*
                 "Applies-to Doc. No." on the payment journal line should match
                 Vendor Ledger Entry."Document No.".
@@ -776,9 +778,9 @@ reportextension 50195 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
         a set.
 
         The lookup criteria are:
-          - Vendor No.
-          - Document Type = Invoice
-          - Document No. = Applies-to Doc. No.
+        - Vendor No.
+        - Document Type = Invoice or Credit Memo
+        - Document No. = Applies-to Doc. No.
     */
     local procedure AddApplicationFromDocumentNo(
         VendorNo: Code[20];
@@ -798,9 +800,11 @@ reportextension 50195 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
             "Vendor No.",
             VendorNo);
 
-        VendorLedgerEntry.SetRange(
+        VendorLedgerEntry.SetFilter(
             "Document Type",
-            VendorLedgerEntry."Document Type"::Invoice);
+            '%1|%2',
+            VendorLedgerEntry."Document Type"::Invoice,
+            VendorLedgerEntry."Document Type"::"Credit Memo");
 
         VendorLedgerEntry.SetRange(
             "Document No.",

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -10,1510 +10,6 @@
       <rd:DataSourceID>a9d36e80-4c12-404c-9f4c-5e0f505e56a5</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="GenJnlLine_Journal_Template_Name">
-          <DataField>GenJnlLine_Journal_Template_Name</DataField>
-        </Field>
-        <Field Name="GenJnlLine_Journal_Batch_Name">
-          <DataField>GenJnlLine_Journal_Batch_Name</DataField>
-        </Field>
-        <Field Name="GenJnlLine_Line_No_">
-          <DataField>GenJnlLine_Line_No_</DataField>
-        </Field>
-        <Field Name="EAVendorNo">
-          <DataField>EAVendorNo</DataField>
-        </Field>
-        <Field Name="EAExternalDocumentNo">
-          <DataField>EAExternalDocumentNo</DataField>
-        </Field>
-        <Field Name="EAAppliesToDocNo">
-          <DataField>EAAppliesToDocNo</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo1">
-          <DataField>EAFooterAppliesToDocNo1</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo2">
-          <DataField>EAFooterAppliesToDocNo2</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo3">
-          <DataField>EAFooterAppliesToDocNo3</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo4">
-          <DataField>EAFooterAppliesToDocNo4</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo5">
-          <DataField>EAFooterAppliesToDocNo5</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo6">
-          <DataField>EAFooterAppliesToDocNo6</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo7">
-          <DataField>EAFooterAppliesToDocNo7</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo8">
-          <DataField>EAFooterAppliesToDocNo8</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo9">
-          <DataField>EAFooterAppliesToDocNo9</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo10">
-          <DataField>EAFooterAppliesToDocNo10</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo1">
-          <DataField>EAFooterExternalDocumentNo1</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo2">
-          <DataField>EAFooterExternalDocumentNo2</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo3">
-          <DataField>EAFooterExternalDocumentNo3</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo4">
-          <DataField>EAFooterExternalDocumentNo4</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo5">
-          <DataField>EAFooterExternalDocumentNo5</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo6">
-          <DataField>EAFooterExternalDocumentNo6</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo7">
-          <DataField>EAFooterExternalDocumentNo7</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo8">
-          <DataField>EAFooterExternalDocumentNo8</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo9">
-          <DataField>EAFooterExternalDocumentNo9</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo10">
-          <DataField>EAFooterExternalDocumentNo10</DataField>
-        </Field>
-        <Field Name="CheckToAddr_1_">
-          <DataField>CheckToAddr_1_</DataField>
-        </Field>
-        <Field Name="CheckDateText">
-          <DataField>CheckDateText</DataField>
-        </Field>
-        <Field Name="CheckNoText">
-          <DataField>CheckNoText</DataField>
-        </Field>
-        <Field Name="PageNo">
-          <DataField>PageNo</DataField>
-        </Field>
-        <Field Name="CheckPages_Number">
-          <DataField>CheckPages_Number</DataField>
-        </Field>
-        <Field Name="CheckNoTextCaption">
-          <DataField>CheckNoTextCaption</DataField>
-        </Field>
-        <Field Name="PreprintedStub">
-          <DataField>PreprintedStub</DataField>
-        </Field>
-        <Field Name="LineAmount">
-          <DataField>LineAmount</DataField>
-        </Field>
-        <Field Name="LineAmountFormat">
-          <DataField>LineAmountFormat</DataField>
-        </Field>
-        <Field Name="LineDiscount">
-          <DataField>LineDiscount</DataField>
-        </Field>
-        <Field Name="LineDiscountFormat">
-          <DataField>LineDiscountFormat</DataField>
-        </Field>
-        <Field Name="LineAmount___LineDiscount">
-          <DataField>LineAmount___LineDiscount</DataField>
-        </Field>
-        <Field Name="LineAmount___LineDiscountFormat">
-          <DataField>LineAmount___LineDiscountFormat</DataField>
-        </Field>
-        <Field Name="DocNo">
-          <DataField>DocNo</DataField>
-        </Field>
-        <Field Name="DocDate">
-          <DataField>DocDate</DataField>
-        </Field>
-        <Field Name="PostingDesc">
-          <DataField>PostingDesc</DataField>
-        </Field>
-        <Field Name="PrintSettledLoop_Number">
-          <DataField>PrintSettledLoop_Number</DataField>
-        </Field>
-        <Field Name="LineAmountCaption">
-          <DataField>LineAmountCaption</DataField>
-        </Field>
-        <Field Name="LineDiscountCaption">
-          <DataField>LineDiscountCaption</DataField>
-        </Field>
-        <Field Name="DocNoCaption">
-          <DataField>DocNoCaption</DataField>
-        </Field>
-        <Field Name="DocDateCaption">
-          <DataField>DocDateCaption</DataField>
-        </Field>
-        <Field Name="Posting_DescriptionCaption">
-          <DataField>Posting_DescriptionCaption</DataField>
-        </Field>
-        <Field Name="AmountCaption">
-          <DataField>AmountCaption</DataField>
-        </Field>
-        <Field Name="BankTransitNo">
-          <DataField>BankTransitNo</DataField>
-        </Field>
-        <Field Name="BankAccountNo">
-          <DataField>BankAccountNo</DataField>
-        </Field>
-        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_5_">
-          <DataField>PrnChkCheckToAddr_CheckStyle__CA_5_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_4_">
-          <DataField>PrnChkCheckToAddr_CheckStyle__CA_4_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_3_">
-          <DataField>PrnChkCheckToAddr_CheckStyle__CA_3_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_2_">
-          <DataField>PrnChkCheckToAddr_CheckStyle__CA_2_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_1_">
-          <DataField>PrnChkCheckToAddr_CheckStyle__CA_1_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckAmountText_CheckStyle__US_">
-          <DataField>PrnChkCheckAmountText_CheckStyle__US_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckDateText_CheckStyle__US_">
-          <DataField>PrnChkCheckDateText_CheckStyle__US_</DataField>
-        </Field>
-        <Field Name="PrnChkDescriptionLine_CheckStyle__US_2_">
-          <DataField>PrnChkDescriptionLine_CheckStyle__US_2_</DataField>
-        </Field>
-        <Field Name="PrnChkDescriptionLine_CheckStyle__US_1_">
-          <DataField>PrnChkDescriptionLine_CheckStyle__US_1_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckToAddr_CheckStyle__US_1_">
-          <DataField>PrnChkCheckToAddr_CheckStyle__US_1_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckToAddr_CheckStyle__US_2_">
-          <DataField>PrnChkCheckToAddr_CheckStyle__US_2_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckToAddr_CheckStyle__US_4_">
-          <DataField>PrnChkCheckToAddr_CheckStyle__US_4_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckToAddr_CheckStyle__US_3_">
-          <DataField>PrnChkCheckToAddr_CheckStyle__US_3_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckToAddr_CheckStyle__US_5_">
-          <DataField>PrnChkCheckToAddr_CheckStyle__US_5_</DataField>
-        </Field>
-        <Field Name="PrnChkCompanyAddr_CheckStyle__US_4_">
-          <DataField>PrnChkCompanyAddr_CheckStyle__US_4_</DataField>
-        </Field>
-        <Field Name="PrnChkCompanyAddr_CheckStyle__US_6_">
-          <DataField>PrnChkCompanyAddr_CheckStyle__US_6_</DataField>
-        </Field>
-        <Field Name="PrnChkCompanyAddr_CheckStyle__US_5_">
-          <DataField>PrnChkCompanyAddr_CheckStyle__US_5_</DataField>
-        </Field>
-        <Field Name="PrnChkCompanyAddr_CheckStyle__US_3_">
-          <DataField>PrnChkCompanyAddr_CheckStyle__US_3_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckNoText_CheckStyle__US_">
-          <DataField>PrnChkCheckNoText_CheckStyle__US_</DataField>
-        </Field>
-        <Field Name="PrnChkCompanyAddr_CheckStyle__US_2_">
-          <DataField>PrnChkCompanyAddr_CheckStyle__US_2_</DataField>
-        </Field>
-        <Field Name="PrnChkCompanyAddr_CheckStyle__US_1_">
-          <DataField>PrnChkCompanyAddr_CheckStyle__US_1_</DataField>
-        </Field>
-        <Field Name="EADueDate">
-          <DataField>EADueDate</DataField>
-        </Field>
-        <Field Name="EASelectedEntryCount">
-          <DataField>EASelectedEntryCount</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate1">
-          <DataField>EAFooterDueDate1</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate2">
-          <DataField>EAFooterDueDate2</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate3">
-          <DataField>EAFooterDueDate3</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate4">
-          <DataField>EAFooterDueDate4</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate5">
-          <DataField>EAFooterDueDate5</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate6">
-          <DataField>EAFooterDueDate6</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate7">
-          <DataField>EAFooterDueDate7</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate8">
-          <DataField>EAFooterDueDate8</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate9">
-          <DataField>EAFooterDueDate9</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate10">
-          <DataField>EAFooterDueDate10</DataField>
-        </Field>
-        <Field Name="TotalLineAmount">
-          <DataField>TotalLineAmount</DataField>
-        </Field>
-        <Field Name="TotalLineAmountFormat">
-          <DataField>TotalLineAmountFormat</DataField>
-        </Field>
-        <Field Name="TotalText">
-          <DataField>TotalText</DataField>
-        </Field>
-        <Field Name="PrnChkVoidText_CheckStyle__US_">
-          <DataField>PrnChkVoidText_CheckStyle__US_</DataField>
-        </Field>
-        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_1_">
-          <DataField>PrnChkCompanyAddr_CheckStyle__CA_1_</DataField>
-        </Field>
-        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_2_">
-          <DataField>PrnChkCompanyAddr_CheckStyle__CA_2_</DataField>
-        </Field>
-        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_3_">
-          <DataField>PrnChkCompanyAddr_CheckStyle__CA_3_</DataField>
-        </Field>
-        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_4_">
-          <DataField>PrnChkCompanyAddr_CheckStyle__CA_4_</DataField>
-        </Field>
-        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_5_">
-          <DataField>PrnChkCompanyAddr_CheckStyle__CA_5_</DataField>
-        </Field>
-        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_6_">
-          <DataField>PrnChkCompanyAddr_CheckStyle__CA_6_</DataField>
-        </Field>
-        <Field Name="PrnChkDescriptionLine_CheckStyle__CA_1_">
-          <DataField>PrnChkDescriptionLine_CheckStyle__CA_1_</DataField>
-        </Field>
-        <Field Name="PrnChkDescriptionLine_CheckStyle__CA_2_">
-          <DataField>PrnChkDescriptionLine_CheckStyle__CA_2_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckDateText_CheckStyle__CA_">
-          <DataField>PrnChkCheckDateText_CheckStyle__CA_</DataField>
-        </Field>
-        <Field Name="PrnChkDateIndicator_CheckStyle__CA_">
-          <DataField>PrnChkDateIndicator_CheckStyle__CA_</DataField>
-        </Field>
-        <Field Name="PrnChkCheckAmountText_CheckStyle__CA_">
-          <DataField>PrnChkCheckAmountText_CheckStyle__CA_</DataField>
-        </Field>
-        <Field Name="PrnChkVoidText_CheckStyle__CA_">
-          <DataField>PrnChkVoidText_CheckStyle__CA_</DataField>
-        </Field>
-        <Field Name="PrnChkCurrencyCode_CheckStyle__CA_">
-          <DataField>PrnChkCurrencyCode_CheckStyle__CA_</DataField>
-        </Field>
-        <Field Name="PrnChkCurrencyCode_CheckStyle__US_">
-          <DataField>PrnChkCurrencyCode_CheckStyle__US_</DataField>
-        </Field>
-        <Field Name="CheckNoText_Control1480000">
-          <DataField>CheckNoText_Control1480000</DataField>
-        </Field>
-        <Field Name="CheckDateText_Control1480021">
-          <DataField>CheckDateText_Control1480021</DataField>
-        </Field>
-        <Field Name="CheckToAddr_1__Control1480022">
-          <DataField>CheckToAddr_1__Control1480022</DataField>
-        </Field>
-        <Field Name="Stub2DocNoHeader">
-          <DataField>Stub2DocNoHeader</DataField>
-        </Field>
-        <Field Name="Stub2DocDateHeader">
-          <DataField>Stub2DocDateHeader</DataField>
-        </Field>
-        <Field Name="Stub2AmountHeader">
-          <DataField>Stub2AmountHeader</DataField>
-        </Field>
-        <Field Name="Stub2DiscountHeader">
-          <DataField>Stub2DiscountHeader</DataField>
-        </Field>
-        <Field Name="Stub2NetAmountHeader">
-          <DataField>Stub2NetAmountHeader</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_1_">
-          <DataField>Stub2LineAmount_1_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_1_Format">
-          <DataField>Stub2LineAmount_1_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_1_">
-          <DataField>Stub2LineDiscount_1_</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_1_Format">
-          <DataField>Stub2LineDiscount_1_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_1____Stub2LineDiscount_1_">
-          <DataField>Stub2LineAmount_1____Stub2LineDiscount_1_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_1____Stub2LineDiscount_1_Format">
-          <DataField>Stub2LineAmount_1____Stub2LineDiscount_1_Format</DataField>
-        </Field>
-        <Field Name="Stub2DocDate_1_">
-          <DataField>Stub2DocDate_1_</DataField>
-        </Field>
-        <Field Name="Stub2DocNo_1_">
-          <DataField>Stub2DocNo_1_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_2_">
-          <DataField>Stub2LineAmount_2_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_2_Format">
-          <DataField>Stub2LineAmount_2_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_2_">
-          <DataField>Stub2LineDiscount_2_</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_2_Format">
-          <DataField>Stub2LineDiscount_2_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_2____Stub2LineDiscount_2_">
-          <DataField>Stub2LineAmount_2____Stub2LineDiscount_2_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_2____Stub2LineDiscount_2_Format">
-          <DataField>Stub2LineAmount_2____Stub2LineDiscount_2_Format</DataField>
-        </Field>
-        <Field Name="Stub2DocDate_2_">
-          <DataField>Stub2DocDate_2_</DataField>
-        </Field>
-        <Field Name="Stub2DocNo_2_">
-          <DataField>Stub2DocNo_2_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_3_">
-          <DataField>Stub2LineAmount_3_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_3_Format">
-          <DataField>Stub2LineAmount_3_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_3_">
-          <DataField>Stub2LineDiscount_3_</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_3_Format">
-          <DataField>Stub2LineDiscount_3_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_3____Stub2LineDiscount_3_">
-          <DataField>Stub2LineAmount_3____Stub2LineDiscount_3_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_3____Stub2LineDiscount_3_Format">
-          <DataField>Stub2LineAmount_3____Stub2LineDiscount_3_Format</DataField>
-        </Field>
-        <Field Name="Stub2DocDate_3_">
-          <DataField>Stub2DocDate_3_</DataField>
-        </Field>
-        <Field Name="Stub2DocNo_3_">
-          <DataField>Stub2DocNo_3_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_4_">
-          <DataField>Stub2LineAmount_4_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_4_Format">
-          <DataField>Stub2LineAmount_4_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_4_">
-          <DataField>Stub2LineDiscount_4_</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_4_Format">
-          <DataField>Stub2LineDiscount_4_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_4____Stub2LineDiscount_4_">
-          <DataField>Stub2LineAmount_4____Stub2LineDiscount_4_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_4____Stub2LineDiscount_4_Format">
-          <DataField>Stub2LineAmount_4____Stub2LineDiscount_4_Format</DataField>
-        </Field>
-        <Field Name="Stub2DocDate_4_">
-          <DataField>Stub2DocDate_4_</DataField>
-        </Field>
-        <Field Name="Stub2DocNo_4_">
-          <DataField>Stub2DocNo_4_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_5_">
-          <DataField>Stub2LineAmount_5_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_5_Format">
-          <DataField>Stub2LineAmount_5_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_5_">
-          <DataField>Stub2LineDiscount_5_</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_5_Format">
-          <DataField>Stub2LineDiscount_5_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_5____Stub2LineDiscount_5_">
-          <DataField>Stub2LineAmount_5____Stub2LineDiscount_5_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_5____Stub2LineDiscount_5_Format">
-          <DataField>Stub2LineAmount_5____Stub2LineDiscount_5_Format</DataField>
-        </Field>
-        <Field Name="Stub2DocDate_5_">
-          <DataField>Stub2DocDate_5_</DataField>
-        </Field>
-        <Field Name="Stub2DocNo_5_">
-          <DataField>Stub2DocNo_5_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_6_">
-          <DataField>Stub2LineAmount_6_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_6_Format">
-          <DataField>Stub2LineAmount_6_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_6_">
-          <DataField>Stub2LineDiscount_6_</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_6_Format">
-          <DataField>Stub2LineDiscount_6_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_6____Stub2LineDiscount_6_">
-          <DataField>Stub2LineAmount_6____Stub2LineDiscount_6_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_6____Stub2LineDiscount_6_Format">
-          <DataField>Stub2LineAmount_6____Stub2LineDiscount_6_Format</DataField>
-        </Field>
-        <Field Name="Stub2DocDate_6_">
-          <DataField>Stub2DocDate_6_</DataField>
-        </Field>
-        <Field Name="Stub2DocNo_6_">
-          <DataField>Stub2DocNo_6_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_7_">
-          <DataField>Stub2LineAmount_7_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_7_Format">
-          <DataField>Stub2LineAmount_7_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_7_">
-          <DataField>Stub2LineDiscount_7_</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_7_Format">
-          <DataField>Stub2LineDiscount_7_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_7____Stub2LineDiscount_7_">
-          <DataField>Stub2LineAmount_7____Stub2LineDiscount_7_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_7____Stub2LineDiscount_7_Format">
-          <DataField>Stub2LineAmount_7____Stub2LineDiscount_7_Format</DataField>
-        </Field>
-        <Field Name="Stub2DocDate_7_">
-          <DataField>Stub2DocDate_7_</DataField>
-        </Field>
-        <Field Name="Stub2DocNo_7_">
-          <DataField>Stub2DocNo_7_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_8_">
-          <DataField>Stub2LineAmount_8_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_8_Format">
-          <DataField>Stub2LineAmount_8_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_8_">
-          <DataField>Stub2LineDiscount_8_</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_8_Format">
-          <DataField>Stub2LineDiscount_8_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_8____Stub2LineDiscount_8_">
-          <DataField>Stub2LineAmount_8____Stub2LineDiscount_8_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_8____Stub2LineDiscount_8_Format">
-          <DataField>Stub2LineAmount_8____Stub2LineDiscount_8_Format</DataField>
-        </Field>
-        <Field Name="Stub2DocDate_8_">
-          <DataField>Stub2DocDate_8_</DataField>
-        </Field>
-        <Field Name="Stub2DocNo_8_">
-          <DataField>Stub2DocNo_8_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_9_">
-          <DataField>Stub2LineAmount_9_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_9_Format">
-          <DataField>Stub2LineAmount_9_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_9_">
-          <DataField>Stub2LineDiscount_9_</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_9_Format">
-          <DataField>Stub2LineDiscount_9_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_9____Stub2LineDiscount_9_">
-          <DataField>Stub2LineAmount_9____Stub2LineDiscount_9_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_9____Stub2LineDiscount_9_Format">
-          <DataField>Stub2LineAmount_9____Stub2LineDiscount_9_Format</DataField>
-        </Field>
-        <Field Name="Stub2DocDate_9_">
-          <DataField>Stub2DocDate_9_</DataField>
-        </Field>
-        <Field Name="Stub2DocNo_9_">
-          <DataField>Stub2DocNo_9_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_10_">
-          <DataField>Stub2LineAmount_10_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_10_Format">
-          <DataField>Stub2LineAmount_10_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_10_">
-          <DataField>Stub2LineDiscount_10_</DataField>
-        </Field>
-        <Field Name="Stub2LineDiscount_10_Format">
-          <DataField>Stub2LineDiscount_10_Format</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_10____Stub2LineDiscount_10_">
-          <DataField>Stub2LineAmount_10____Stub2LineDiscount_10_</DataField>
-        </Field>
-        <Field Name="Stub2LineAmount_10____Stub2LineDiscount_10_Format">
-          <DataField>Stub2LineAmount_10____Stub2LineDiscount_10_Format</DataField>
-        </Field>
-        <Field Name="Stub2DocDate_10_">
-          <DataField>Stub2DocDate_10_</DataField>
-        </Field>
-        <Field Name="Stub2DocNo_10_">
-          <DataField>Stub2DocNo_10_</DataField>
-        </Field>
-        <Field Name="TotalLineAmount_Control1480082">
-          <DataField>TotalLineAmount_Control1480082</DataField>
-        </Field>
-        <Field Name="TotalLineAmount_Control1480082Format">
-          <DataField>TotalLineAmount_Control1480082Format</DataField>
-        </Field>
-        <Field Name="TotalText_Control1480083">
-          <DataField>TotalText_Control1480083</DataField>
-        </Field>
-        <Field Name="Stub2PostingDescHeader">
-          <DataField>Stub2PostingDescHeader</DataField>
-        </Field>
-        <Field Name="Stub2PostingDesc_1_">
-          <DataField>Stub2PostingDesc_1_</DataField>
-        </Field>
-        <Field Name="Stub2PostingDesc_2_">
-          <DataField>Stub2PostingDesc_2_</DataField>
-        </Field>
-        <Field Name="Stub2PostingDesc_4_">
-          <DataField>Stub2PostingDesc_4_</DataField>
-        </Field>
-        <Field Name="Stub2PostingDesc_3_">
-          <DataField>Stub2PostingDesc_3_</DataField>
-        </Field>
-        <Field Name="Stub2PostingDesc_8_">
-          <DataField>Stub2PostingDesc_8_</DataField>
-        </Field>
-        <Field Name="Stub2PostingDesc_7_">
-          <DataField>Stub2PostingDesc_7_</DataField>
-        </Field>
-        <Field Name="Stub2PostingDesc_6_">
-          <DataField>Stub2PostingDesc_6_</DataField>
-        </Field>
-        <Field Name="Stub2PostingDesc_5_">
-          <DataField>Stub2PostingDesc_5_</DataField>
-        </Field>
-        <Field Name="Stub2PostingDesc_10_">
-          <DataField>Stub2PostingDesc_10_</DataField>
-        </Field>
-        <Field Name="Stub2PostingDesc_9_">
-          <DataField>Stub2PostingDesc_9_</DataField>
-        </Field>
-        <Field Name="CheckToAddr_5_">
-          <DataField>CheckToAddr_5_</DataField>
-        </Field>
-        <Field Name="CheckToAddr_4_">
-          <DataField>CheckToAddr_4_</DataField>
-        </Field>
-        <Field Name="CheckToAddr_3_">
-          <DataField>CheckToAddr_3_</DataField>
-        </Field>
-        <Field Name="CheckToAddr_2_">
-          <DataField>CheckToAddr_2_</DataField>
-        </Field>
-        <Field Name="CheckToAddr_01_">
-          <DataField>CheckToAddr_01_</DataField>
-        </Field>
-        <Field Name="VoidText">
-          <DataField>VoidText</DataField>
-        </Field>
-        <Field Name="BankCurrencyCode">
-          <DataField>BankCurrencyCode</DataField>
-        </Field>
-        <Field Name="DollarSignBefore_CheckAmountText_DollarSignAfter">
-          <DataField>DollarSignBefore_CheckAmountText_DollarSignAfter</DataField>
-        </Field>
-        <Field Name="DescriptionLine_1__">
-          <DataField>DescriptionLine_1__</DataField>
-        </Field>
-        <Field Name="DescriptionLine_2__">
-          <DataField>DescriptionLine_2__</DataField>
-        </Field>
-        <Field Name="DateIndicator">
-          <DataField>DateIndicator</DataField>
-        </Field>
-        <Field Name="CheckDateText_Control1020013">
-          <DataField>CheckDateText_Control1020013</DataField>
-        </Field>
-        <Field Name="CheckNoText_Control1020014">
-          <DataField>CheckNoText_Control1020014</DataField>
-        </Field>
-        <Field Name="CompanyAddr_6_">
-          <DataField>CompanyAddr_6_</DataField>
-        </Field>
-        <Field Name="CompanyAddr_5_">
-          <DataField>CompanyAddr_5_</DataField>
-        </Field>
-        <Field Name="CompanyAddr_4_">
-          <DataField>CompanyAddr_4_</DataField>
-        </Field>
-        <Field Name="CompanyAddr_3_">
-          <DataField>CompanyAddr_3_</DataField>
-        </Field>
-        <Field Name="CompanyAddr_2_">
-          <DataField>CompanyAddr_2_</DataField>
-        </Field>
-        <Field Name="CompanyAddr_1_">
-          <DataField>CompanyAddr_1_</DataField>
-        </Field>
-        <Field Name="CheckStyleIndex">
-          <DataField>CheckStyleIndex</DataField>
-        </Field>
-        <Field Name="CompanyAddr_7_">
-          <DataField>CompanyAddr_7_</DataField>
-        </Field>
-        <Field Name="PrintCheck_Number">
-          <DataField>PrintCheck_Number</DataField>
-        </Field>
-        <Field Name="CheckNoText_Control1480000Caption">
-          <DataField>CheckNoText_Control1480000Caption</DataField>
-        </Field>
-        <Field Name="EARowRefNbr">
-          <DataField>EARowRefNbr</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo11">
-          <DataField>EAFooterAppliesToDocNo11</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo12">
-          <DataField>EAFooterAppliesToDocNo12</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo13">
-          <DataField>EAFooterAppliesToDocNo13</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo14">
-          <DataField>EAFooterAppliesToDocNo14</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo15">
-          <DataField>EAFooterAppliesToDocNo15</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo16">
-          <DataField>EAFooterAppliesToDocNo16</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo17">
-          <DataField>EAFooterAppliesToDocNo17</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo18">
-          <DataField>EAFooterAppliesToDocNo18</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo19">
-          <DataField>EAFooterAppliesToDocNo19</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo20">
-          <DataField>EAFooterAppliesToDocNo20</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo21">
-          <DataField>EAFooterAppliesToDocNo21</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo22">
-          <DataField>EAFooterAppliesToDocNo22</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo23">
-          <DataField>EAFooterAppliesToDocNo23</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo24">
-          <DataField>EAFooterAppliesToDocNo24</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo25">
-          <DataField>EAFooterAppliesToDocNo25</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo26">
-          <DataField>EAFooterAppliesToDocNo26</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo27">
-          <DataField>EAFooterAppliesToDocNo27</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo28">
-          <DataField>EAFooterAppliesToDocNo28</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo29">
-          <DataField>EAFooterAppliesToDocNo29</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo30">
-          <DataField>EAFooterAppliesToDocNo30</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo31">
-          <DataField>EAFooterAppliesToDocNo31</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo32">
-          <DataField>EAFooterAppliesToDocNo32</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo33">
-          <DataField>EAFooterAppliesToDocNo33</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo34">
-          <DataField>EAFooterAppliesToDocNo34</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo35">
-          <DataField>EAFooterAppliesToDocNo35</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo36">
-          <DataField>EAFooterAppliesToDocNo36</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo37">
-          <DataField>EAFooterAppliesToDocNo37</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo38">
-          <DataField>EAFooterAppliesToDocNo38</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo39">
-          <DataField>EAFooterAppliesToDocNo39</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo40">
-          <DataField>EAFooterAppliesToDocNo40</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo41">
-          <DataField>EAFooterAppliesToDocNo41</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo42">
-          <DataField>EAFooterAppliesToDocNo42</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo43">
-          <DataField>EAFooterAppliesToDocNo43</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo44">
-          <DataField>EAFooterAppliesToDocNo44</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo45">
-          <DataField>EAFooterAppliesToDocNo45</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo46">
-          <DataField>EAFooterAppliesToDocNo46</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo47">
-          <DataField>EAFooterAppliesToDocNo47</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo48">
-          <DataField>EAFooterAppliesToDocNo48</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo49">
-          <DataField>EAFooterAppliesToDocNo49</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo50">
-          <DataField>EAFooterAppliesToDocNo50</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo51">
-          <DataField>EAFooterAppliesToDocNo51</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo52">
-          <DataField>EAFooterAppliesToDocNo52</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo53">
-          <DataField>EAFooterAppliesToDocNo53</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo54">
-          <DataField>EAFooterAppliesToDocNo54</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo55">
-          <DataField>EAFooterAppliesToDocNo55</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo56">
-          <DataField>EAFooterAppliesToDocNo56</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo57">
-          <DataField>EAFooterAppliesToDocNo57</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo58">
-          <DataField>EAFooterAppliesToDocNo58</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo59">
-          <DataField>EAFooterAppliesToDocNo59</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo60">
-          <DataField>EAFooterAppliesToDocNo60</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo61">
-          <DataField>EAFooterAppliesToDocNo61</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo62">
-          <DataField>EAFooterAppliesToDocNo62</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo63">
-          <DataField>EAFooterAppliesToDocNo63</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo64">
-          <DataField>EAFooterAppliesToDocNo64</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo65">
-          <DataField>EAFooterAppliesToDocNo65</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo66">
-          <DataField>EAFooterAppliesToDocNo66</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo67">
-          <DataField>EAFooterAppliesToDocNo67</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo68">
-          <DataField>EAFooterAppliesToDocNo68</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo69">
-          <DataField>EAFooterAppliesToDocNo69</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo70">
-          <DataField>EAFooterAppliesToDocNo70</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo71">
-          <DataField>EAFooterAppliesToDocNo71</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo72">
-          <DataField>EAFooterAppliesToDocNo72</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo73">
-          <DataField>EAFooterAppliesToDocNo73</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo74">
-          <DataField>EAFooterAppliesToDocNo74</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo75">
-          <DataField>EAFooterAppliesToDocNo75</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo76">
-          <DataField>EAFooterAppliesToDocNo76</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo77">
-          <DataField>EAFooterAppliesToDocNo77</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo78">
-          <DataField>EAFooterAppliesToDocNo78</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo79">
-          <DataField>EAFooterAppliesToDocNo79</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo80">
-          <DataField>EAFooterAppliesToDocNo80</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo81">
-          <DataField>EAFooterAppliesToDocNo81</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo82">
-          <DataField>EAFooterAppliesToDocNo82</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo83">
-          <DataField>EAFooterAppliesToDocNo83</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo84">
-          <DataField>EAFooterAppliesToDocNo84</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo85">
-          <DataField>EAFooterAppliesToDocNo85</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo86">
-          <DataField>EAFooterAppliesToDocNo86</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo87">
-          <DataField>EAFooterAppliesToDocNo87</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo88">
-          <DataField>EAFooterAppliesToDocNo88</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo89">
-          <DataField>EAFooterAppliesToDocNo89</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo90">
-          <DataField>EAFooterAppliesToDocNo90</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo91">
-          <DataField>EAFooterAppliesToDocNo91</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo92">
-          <DataField>EAFooterAppliesToDocNo92</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo93">
-          <DataField>EAFooterAppliesToDocNo93</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo94">
-          <DataField>EAFooterAppliesToDocNo94</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo95">
-          <DataField>EAFooterAppliesToDocNo95</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo96">
-          <DataField>EAFooterAppliesToDocNo96</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo97">
-          <DataField>EAFooterAppliesToDocNo97</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo98">
-          <DataField>EAFooterAppliesToDocNo98</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo99">
-          <DataField>EAFooterAppliesToDocNo99</DataField>
-        </Field>
-        <Field Name="EAFooterAppliesToDocNo100">
-          <DataField>EAFooterAppliesToDocNo100</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo11">
-          <DataField>EAFooterExternalDocumentNo11</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo12">
-          <DataField>EAFooterExternalDocumentNo12</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo13">
-          <DataField>EAFooterExternalDocumentNo13</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo14">
-          <DataField>EAFooterExternalDocumentNo14</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo15">
-          <DataField>EAFooterExternalDocumentNo15</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo16">
-          <DataField>EAFooterExternalDocumentNo16</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo17">
-          <DataField>EAFooterExternalDocumentNo17</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo18">
-          <DataField>EAFooterExternalDocumentNo18</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo19">
-          <DataField>EAFooterExternalDocumentNo19</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo20">
-          <DataField>EAFooterExternalDocumentNo20</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo21">
-          <DataField>EAFooterExternalDocumentNo21</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo22">
-          <DataField>EAFooterExternalDocumentNo22</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo23">
-          <DataField>EAFooterExternalDocumentNo23</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo24">
-          <DataField>EAFooterExternalDocumentNo24</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo25">
-          <DataField>EAFooterExternalDocumentNo25</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo26">
-          <DataField>EAFooterExternalDocumentNo26</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo27">
-          <DataField>EAFooterExternalDocumentNo27</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo28">
-          <DataField>EAFooterExternalDocumentNo28</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo29">
-          <DataField>EAFooterExternalDocumentNo29</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo30">
-          <DataField>EAFooterExternalDocumentNo30</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo31">
-          <DataField>EAFooterExternalDocumentNo31</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo32">
-          <DataField>EAFooterExternalDocumentNo32</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo33">
-          <DataField>EAFooterExternalDocumentNo33</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo34">
-          <DataField>EAFooterExternalDocumentNo34</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo35">
-          <DataField>EAFooterExternalDocumentNo35</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo36">
-          <DataField>EAFooterExternalDocumentNo36</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo37">
-          <DataField>EAFooterExternalDocumentNo37</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo38">
-          <DataField>EAFooterExternalDocumentNo38</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo39">
-          <DataField>EAFooterExternalDocumentNo39</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo40">
-          <DataField>EAFooterExternalDocumentNo40</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo41">
-          <DataField>EAFooterExternalDocumentNo41</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo42">
-          <DataField>EAFooterExternalDocumentNo42</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo43">
-          <DataField>EAFooterExternalDocumentNo43</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo44">
-          <DataField>EAFooterExternalDocumentNo44</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo45">
-          <DataField>EAFooterExternalDocumentNo45</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo46">
-          <DataField>EAFooterExternalDocumentNo46</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo47">
-          <DataField>EAFooterExternalDocumentNo47</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo48">
-          <DataField>EAFooterExternalDocumentNo48</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo49">
-          <DataField>EAFooterExternalDocumentNo49</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo50">
-          <DataField>EAFooterExternalDocumentNo50</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo51">
-          <DataField>EAFooterExternalDocumentNo51</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo52">
-          <DataField>EAFooterExternalDocumentNo52</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo53">
-          <DataField>EAFooterExternalDocumentNo53</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo54">
-          <DataField>EAFooterExternalDocumentNo54</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo55">
-          <DataField>EAFooterExternalDocumentNo55</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo56">
-          <DataField>EAFooterExternalDocumentNo56</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo57">
-          <DataField>EAFooterExternalDocumentNo57</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo58">
-          <DataField>EAFooterExternalDocumentNo58</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo59">
-          <DataField>EAFooterExternalDocumentNo59</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo60">
-          <DataField>EAFooterExternalDocumentNo60</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo61">
-          <DataField>EAFooterExternalDocumentNo61</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo62">
-          <DataField>EAFooterExternalDocumentNo62</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo63">
-          <DataField>EAFooterExternalDocumentNo63</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo64">
-          <DataField>EAFooterExternalDocumentNo64</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo65">
-          <DataField>EAFooterExternalDocumentNo65</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo66">
-          <DataField>EAFooterExternalDocumentNo66</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo67">
-          <DataField>EAFooterExternalDocumentNo67</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo68">
-          <DataField>EAFooterExternalDocumentNo68</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo69">
-          <DataField>EAFooterExternalDocumentNo69</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo70">
-          <DataField>EAFooterExternalDocumentNo70</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo71">
-          <DataField>EAFooterExternalDocumentNo71</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo72">
-          <DataField>EAFooterExternalDocumentNo72</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo73">
-          <DataField>EAFooterExternalDocumentNo73</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo74">
-          <DataField>EAFooterExternalDocumentNo74</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo75">
-          <DataField>EAFooterExternalDocumentNo75</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo76">
-          <DataField>EAFooterExternalDocumentNo76</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo77">
-          <DataField>EAFooterExternalDocumentNo77</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo78">
-          <DataField>EAFooterExternalDocumentNo78</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo79">
-          <DataField>EAFooterExternalDocumentNo79</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo80">
-          <DataField>EAFooterExternalDocumentNo80</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo81">
-          <DataField>EAFooterExternalDocumentNo81</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo82">
-          <DataField>EAFooterExternalDocumentNo82</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo83">
-          <DataField>EAFooterExternalDocumentNo83</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo84">
-          <DataField>EAFooterExternalDocumentNo84</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo85">
-          <DataField>EAFooterExternalDocumentNo85</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo86">
-          <DataField>EAFooterExternalDocumentNo86</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo87">
-          <DataField>EAFooterExternalDocumentNo87</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo88">
-          <DataField>EAFooterExternalDocumentNo88</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo89">
-          <DataField>EAFooterExternalDocumentNo89</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo90">
-          <DataField>EAFooterExternalDocumentNo90</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo91">
-          <DataField>EAFooterExternalDocumentNo91</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo92">
-          <DataField>EAFooterExternalDocumentNo92</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo93">
-          <DataField>EAFooterExternalDocumentNo93</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo94">
-          <DataField>EAFooterExternalDocumentNo94</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo95">
-          <DataField>EAFooterExternalDocumentNo95</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo96">
-          <DataField>EAFooterExternalDocumentNo96</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo97">
-          <DataField>EAFooterExternalDocumentNo97</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo98">
-          <DataField>EAFooterExternalDocumentNo98</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo99">
-          <DataField>EAFooterExternalDocumentNo99</DataField>
-        </Field>
-        <Field Name="EAFooterExternalDocumentNo100">
-          <DataField>EAFooterExternalDocumentNo100</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate11">
-          <DataField>EAFooterDueDate11</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate12">
-          <DataField>EAFooterDueDate12</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate13">
-          <DataField>EAFooterDueDate13</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate14">
-          <DataField>EAFooterDueDate14</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate15">
-          <DataField>EAFooterDueDate15</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate16">
-          <DataField>EAFooterDueDate16</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate17">
-          <DataField>EAFooterDueDate17</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate18">
-          <DataField>EAFooterDueDate18</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate19">
-          <DataField>EAFooterDueDate19</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate20">
-          <DataField>EAFooterDueDate20</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate21">
-          <DataField>EAFooterDueDate21</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate22">
-          <DataField>EAFooterDueDate22</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate23">
-          <DataField>EAFooterDueDate23</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate24">
-          <DataField>EAFooterDueDate24</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate25">
-          <DataField>EAFooterDueDate25</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate26">
-          <DataField>EAFooterDueDate26</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate27">
-          <DataField>EAFooterDueDate27</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate28">
-          <DataField>EAFooterDueDate28</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate29">
-          <DataField>EAFooterDueDate29</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate30">
-          <DataField>EAFooterDueDate30</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate31">
-          <DataField>EAFooterDueDate31</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate32">
-          <DataField>EAFooterDueDate32</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate33">
-          <DataField>EAFooterDueDate33</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate34">
-          <DataField>EAFooterDueDate34</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate35">
-          <DataField>EAFooterDueDate35</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate36">
-          <DataField>EAFooterDueDate36</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate37">
-          <DataField>EAFooterDueDate37</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate38">
-          <DataField>EAFooterDueDate38</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate39">
-          <DataField>EAFooterDueDate39</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate40">
-          <DataField>EAFooterDueDate40</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate41">
-          <DataField>EAFooterDueDate41</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate42">
-          <DataField>EAFooterDueDate42</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate43">
-          <DataField>EAFooterDueDate43</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate44">
-          <DataField>EAFooterDueDate44</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate45">
-          <DataField>EAFooterDueDate45</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate46">
-          <DataField>EAFooterDueDate46</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate47">
-          <DataField>EAFooterDueDate47</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate48">
-          <DataField>EAFooterDueDate48</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate49">
-          <DataField>EAFooterDueDate49</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate50">
-          <DataField>EAFooterDueDate50</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate51">
-          <DataField>EAFooterDueDate51</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate52">
-          <DataField>EAFooterDueDate52</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate53">
-          <DataField>EAFooterDueDate53</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate54">
-          <DataField>EAFooterDueDate54</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate55">
-          <DataField>EAFooterDueDate55</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate56">
-          <DataField>EAFooterDueDate56</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate57">
-          <DataField>EAFooterDueDate57</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate58">
-          <DataField>EAFooterDueDate58</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate59">
-          <DataField>EAFooterDueDate59</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate60">
-          <DataField>EAFooterDueDate60</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate61">
-          <DataField>EAFooterDueDate61</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate62">
-          <DataField>EAFooterDueDate62</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate63">
-          <DataField>EAFooterDueDate63</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate64">
-          <DataField>EAFooterDueDate64</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate65">
-          <DataField>EAFooterDueDate65</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate66">
-          <DataField>EAFooterDueDate66</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate67">
-          <DataField>EAFooterDueDate67</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate68">
-          <DataField>EAFooterDueDate68</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate69">
-          <DataField>EAFooterDueDate69</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate70">
-          <DataField>EAFooterDueDate70</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate71">
-          <DataField>EAFooterDueDate71</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate72">
-          <DataField>EAFooterDueDate72</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate73">
-          <DataField>EAFooterDueDate73</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate74">
-          <DataField>EAFooterDueDate74</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate75">
-          <DataField>EAFooterDueDate75</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate76">
-          <DataField>EAFooterDueDate76</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate77">
-          <DataField>EAFooterDueDate77</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate78">
-          <DataField>EAFooterDueDate78</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate79">
-          <DataField>EAFooterDueDate79</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate80">
-          <DataField>EAFooterDueDate80</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate81">
-          <DataField>EAFooterDueDate81</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate82">
-          <DataField>EAFooterDueDate82</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate83">
-          <DataField>EAFooterDueDate83</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate84">
-          <DataField>EAFooterDueDate84</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate85">
-          <DataField>EAFooterDueDate85</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate86">
-          <DataField>EAFooterDueDate86</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate87">
-          <DataField>EAFooterDueDate87</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate88">
-          <DataField>EAFooterDueDate88</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate89">
-          <DataField>EAFooterDueDate89</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate90">
-          <DataField>EAFooterDueDate90</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate91">
-          <DataField>EAFooterDueDate91</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate92">
-          <DataField>EAFooterDueDate92</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate93">
-          <DataField>EAFooterDueDate93</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate94">
-          <DataField>EAFooterDueDate94</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate95">
-          <DataField>EAFooterDueDate95</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate96">
-          <DataField>EAFooterDueDate96</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate97">
-          <DataField>EAFooterDueDate97</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate98">
-          <DataField>EAFooterDueDate98</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate99">
-          <DataField>EAFooterDueDate99</DataField>
-        </Field>
-        <Field Name="EAFooterDueDate100">
-          <DataField>EAFooterDueDate100</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -2780,7 +1276,7 @@
               </Paragraphs>
               <Left>1.20746in</Left>
               <Height>0.16656in</Height>
-              <Width>2.68006in</Width>
+              <Width>3.41744in</Width>
               <Style>
                 <BackgroundColor>White</BackgroundColor>
                 <VerticalAlign>Bottom</VerticalAlign>
@@ -3867,7 +2363,7 @@ ORDER OF</Value>
               <Top>4.3116in</Top>
               <Left>1.21007in</Left>
               <Height>0.16654in</Height>
-              <Width>2.68006in</Width>
+              <Width>3.40628in</Width>
               <ZIndex>38</ZIndex>
               <Style />
             </Textbox>
@@ -6324,13 +4820,14 @@ ORDER OF</Value>
                     <FontFamily>Times New Roman</FontFamily>
                     <FontSize>11pt</FontSize>
                     <FontWeight>Bold</FontWeight>
+                    <TextAlign>Right</TextAlign>
                   </Style>
                 </Paragraph>
               </Paragraphs>
               <Top>4.3116in</Top>
-              <Left>4.09436in</Left>
+              <Left>4.6249in</Left>
               <Height>0.16654in</Height>
-              <Width>2.48031in</Width>
+              <Width>1.94977in</Width>
               <ZIndex>123</ZIndex>
               <DataElementOutput>NoOutput</DataElementOutput>
               <Style>
@@ -6384,12 +4881,6 @@ ORDER OF</Value>
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>
 '==============================================================================
 ' EA CHECK CUSTOM CODE
@@ -6941,4 +5432,1508 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>7816eb05-7d8e-4ccb-a667-0dd1b4dc95f5</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="GenJnlLine_Journal_Template_Name">
+          <DataField>GenJnlLine_Journal_Template_Name</DataField>
+        </Field>
+        <Field Name="GenJnlLine_Journal_Batch_Name">
+          <DataField>GenJnlLine_Journal_Batch_Name</DataField>
+        </Field>
+        <Field Name="GenJnlLine_Line_No_">
+          <DataField>GenJnlLine_Line_No_</DataField>
+        </Field>
+        <Field Name="CheckToAddr_1_">
+          <DataField>CheckToAddr_1_</DataField>
+        </Field>
+        <Field Name="CheckDateText">
+          <DataField>CheckDateText</DataField>
+        </Field>
+        <Field Name="CheckNoText">
+          <DataField>CheckNoText</DataField>
+        </Field>
+        <Field Name="PageNo">
+          <DataField>PageNo</DataField>
+        </Field>
+        <Field Name="CheckPages_Number">
+          <DataField>CheckPages_Number</DataField>
+        </Field>
+        <Field Name="CheckNoTextCaption">
+          <DataField>CheckNoTextCaption</DataField>
+        </Field>
+        <Field Name="PreprintedStub">
+          <DataField>PreprintedStub</DataField>
+        </Field>
+        <Field Name="LineAmount">
+          <DataField>LineAmount</DataField>
+        </Field>
+        <Field Name="LineAmountFormat">
+          <DataField>LineAmountFormat</DataField>
+        </Field>
+        <Field Name="LineDiscount">
+          <DataField>LineDiscount</DataField>
+        </Field>
+        <Field Name="LineDiscountFormat">
+          <DataField>LineDiscountFormat</DataField>
+        </Field>
+        <Field Name="LineAmount___LineDiscount">
+          <DataField>LineAmount___LineDiscount</DataField>
+        </Field>
+        <Field Name="LineAmount___LineDiscountFormat">
+          <DataField>LineAmount___LineDiscountFormat</DataField>
+        </Field>
+        <Field Name="DocNo">
+          <DataField>DocNo</DataField>
+        </Field>
+        <Field Name="DocDate">
+          <DataField>DocDate</DataField>
+        </Field>
+        <Field Name="PostingDesc">
+          <DataField>PostingDesc</DataField>
+        </Field>
+        <Field Name="PrintSettledLoop_Number">
+          <DataField>PrintSettledLoop_Number</DataField>
+        </Field>
+        <Field Name="LineAmountCaption">
+          <DataField>LineAmountCaption</DataField>
+        </Field>
+        <Field Name="LineDiscountCaption">
+          <DataField>LineDiscountCaption</DataField>
+        </Field>
+        <Field Name="DocNoCaption">
+          <DataField>DocNoCaption</DataField>
+        </Field>
+        <Field Name="DocDateCaption">
+          <DataField>DocDateCaption</DataField>
+        </Field>
+        <Field Name="Posting_DescriptionCaption">
+          <DataField>Posting_DescriptionCaption</DataField>
+        </Field>
+        <Field Name="AmountCaption">
+          <DataField>AmountCaption</DataField>
+        </Field>
+        <Field Name="BankTransitNo">
+          <DataField>BankTransitNo</DataField>
+        </Field>
+        <Field Name="BankAccountNo">
+          <DataField>BankAccountNo</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_5_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__CA_5_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_4_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__CA_4_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_3_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__CA_3_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_2_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__CA_2_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__CA_1_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__CA_1_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckAmountText_CheckStyle__US_">
+          <DataField>PrnChkCheckAmountText_CheckStyle__US_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckDateText_CheckStyle__US_">
+          <DataField>PrnChkCheckDateText_CheckStyle__US_</DataField>
+        </Field>
+        <Field Name="PrnChkDescriptionLine_CheckStyle__US_2_">
+          <DataField>PrnChkDescriptionLine_CheckStyle__US_2_</DataField>
+        </Field>
+        <Field Name="PrnChkDescriptionLine_CheckStyle__US_1_">
+          <DataField>PrnChkDescriptionLine_CheckStyle__US_1_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__US_1_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__US_1_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__US_2_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__US_2_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__US_4_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__US_4_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__US_3_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__US_3_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckToAddr_CheckStyle__US_5_">
+          <DataField>PrnChkCheckToAddr_CheckStyle__US_5_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__US_4_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__US_4_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__US_6_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__US_6_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__US_5_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__US_5_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__US_3_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__US_3_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckNoText_CheckStyle__US_">
+          <DataField>PrnChkCheckNoText_CheckStyle__US_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__US_2_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__US_2_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__US_1_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__US_1_</DataField>
+        </Field>
+        <Field Name="TotalLineAmount">
+          <DataField>TotalLineAmount</DataField>
+        </Field>
+        <Field Name="TotalLineAmountFormat">
+          <DataField>TotalLineAmountFormat</DataField>
+        </Field>
+        <Field Name="TotalText">
+          <DataField>TotalText</DataField>
+        </Field>
+        <Field Name="PrnChkVoidText_CheckStyle__US_">
+          <DataField>PrnChkVoidText_CheckStyle__US_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_1_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__CA_1_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_2_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__CA_2_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_3_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__CA_3_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_4_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__CA_4_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_5_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__CA_5_</DataField>
+        </Field>
+        <Field Name="PrnChkCompanyAddr_CheckStyle__CA_6_">
+          <DataField>PrnChkCompanyAddr_CheckStyle__CA_6_</DataField>
+        </Field>
+        <Field Name="PrnChkDescriptionLine_CheckStyle__CA_1_">
+          <DataField>PrnChkDescriptionLine_CheckStyle__CA_1_</DataField>
+        </Field>
+        <Field Name="PrnChkDescriptionLine_CheckStyle__CA_2_">
+          <DataField>PrnChkDescriptionLine_CheckStyle__CA_2_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckDateText_CheckStyle__CA_">
+          <DataField>PrnChkCheckDateText_CheckStyle__CA_</DataField>
+        </Field>
+        <Field Name="PrnChkDateIndicator_CheckStyle__CA_">
+          <DataField>PrnChkDateIndicator_CheckStyle__CA_</DataField>
+        </Field>
+        <Field Name="PrnChkCheckAmountText_CheckStyle__CA_">
+          <DataField>PrnChkCheckAmountText_CheckStyle__CA_</DataField>
+        </Field>
+        <Field Name="PrnChkVoidText_CheckStyle__CA_">
+          <DataField>PrnChkVoidText_CheckStyle__CA_</DataField>
+        </Field>
+        <Field Name="PrnChkCurrencyCode_CheckStyle__CA_">
+          <DataField>PrnChkCurrencyCode_CheckStyle__CA_</DataField>
+        </Field>
+        <Field Name="PrnChkCurrencyCode_CheckStyle__US_">
+          <DataField>PrnChkCurrencyCode_CheckStyle__US_</DataField>
+        </Field>
+        <Field Name="CheckNoText_Control1480000">
+          <DataField>CheckNoText_Control1480000</DataField>
+        </Field>
+        <Field Name="CheckDateText_Control1480021">
+          <DataField>CheckDateText_Control1480021</DataField>
+        </Field>
+        <Field Name="CheckToAddr_1__Control1480022">
+          <DataField>CheckToAddr_1__Control1480022</DataField>
+        </Field>
+        <Field Name="Stub2DocNoHeader">
+          <DataField>Stub2DocNoHeader</DataField>
+        </Field>
+        <Field Name="Stub2DocDateHeader">
+          <DataField>Stub2DocDateHeader</DataField>
+        </Field>
+        <Field Name="Stub2AmountHeader">
+          <DataField>Stub2AmountHeader</DataField>
+        </Field>
+        <Field Name="Stub2DiscountHeader">
+          <DataField>Stub2DiscountHeader</DataField>
+        </Field>
+        <Field Name="Stub2NetAmountHeader">
+          <DataField>Stub2NetAmountHeader</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_1_">
+          <DataField>Stub2LineAmount_1_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_1_Format">
+          <DataField>Stub2LineAmount_1_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_1_">
+          <DataField>Stub2LineDiscount_1_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_1_Format">
+          <DataField>Stub2LineDiscount_1_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_1____Stub2LineDiscount_1_">
+          <DataField>Stub2LineAmount_1____Stub2LineDiscount_1_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_1____Stub2LineDiscount_1_Format">
+          <DataField>Stub2LineAmount_1____Stub2LineDiscount_1_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_1_">
+          <DataField>Stub2DocDate_1_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_1_">
+          <DataField>Stub2DocNo_1_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_2_">
+          <DataField>Stub2LineAmount_2_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_2_Format">
+          <DataField>Stub2LineAmount_2_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_2_">
+          <DataField>Stub2LineDiscount_2_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_2_Format">
+          <DataField>Stub2LineDiscount_2_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_2____Stub2LineDiscount_2_">
+          <DataField>Stub2LineAmount_2____Stub2LineDiscount_2_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_2____Stub2LineDiscount_2_Format">
+          <DataField>Stub2LineAmount_2____Stub2LineDiscount_2_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_2_">
+          <DataField>Stub2DocDate_2_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_2_">
+          <DataField>Stub2DocNo_2_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_3_">
+          <DataField>Stub2LineAmount_3_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_3_Format">
+          <DataField>Stub2LineAmount_3_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_3_">
+          <DataField>Stub2LineDiscount_3_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_3_Format">
+          <DataField>Stub2LineDiscount_3_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_3____Stub2LineDiscount_3_">
+          <DataField>Stub2LineAmount_3____Stub2LineDiscount_3_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_3____Stub2LineDiscount_3_Format">
+          <DataField>Stub2LineAmount_3____Stub2LineDiscount_3_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_3_">
+          <DataField>Stub2DocDate_3_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_3_">
+          <DataField>Stub2DocNo_3_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_4_">
+          <DataField>Stub2LineAmount_4_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_4_Format">
+          <DataField>Stub2LineAmount_4_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_4_">
+          <DataField>Stub2LineDiscount_4_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_4_Format">
+          <DataField>Stub2LineDiscount_4_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_4____Stub2LineDiscount_4_">
+          <DataField>Stub2LineAmount_4____Stub2LineDiscount_4_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_4____Stub2LineDiscount_4_Format">
+          <DataField>Stub2LineAmount_4____Stub2LineDiscount_4_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_4_">
+          <DataField>Stub2DocDate_4_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_4_">
+          <DataField>Stub2DocNo_4_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_5_">
+          <DataField>Stub2LineAmount_5_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_5_Format">
+          <DataField>Stub2LineAmount_5_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_5_">
+          <DataField>Stub2LineDiscount_5_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_5_Format">
+          <DataField>Stub2LineDiscount_5_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_5____Stub2LineDiscount_5_">
+          <DataField>Stub2LineAmount_5____Stub2LineDiscount_5_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_5____Stub2LineDiscount_5_Format">
+          <DataField>Stub2LineAmount_5____Stub2LineDiscount_5_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_5_">
+          <DataField>Stub2DocDate_5_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_5_">
+          <DataField>Stub2DocNo_5_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_6_">
+          <DataField>Stub2LineAmount_6_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_6_Format">
+          <DataField>Stub2LineAmount_6_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_6_">
+          <DataField>Stub2LineDiscount_6_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_6_Format">
+          <DataField>Stub2LineDiscount_6_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_6____Stub2LineDiscount_6_">
+          <DataField>Stub2LineAmount_6____Stub2LineDiscount_6_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_6____Stub2LineDiscount_6_Format">
+          <DataField>Stub2LineAmount_6____Stub2LineDiscount_6_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_6_">
+          <DataField>Stub2DocDate_6_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_6_">
+          <DataField>Stub2DocNo_6_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_7_">
+          <DataField>Stub2LineAmount_7_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_7_Format">
+          <DataField>Stub2LineAmount_7_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_7_">
+          <DataField>Stub2LineDiscount_7_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_7_Format">
+          <DataField>Stub2LineDiscount_7_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_7____Stub2LineDiscount_7_">
+          <DataField>Stub2LineAmount_7____Stub2LineDiscount_7_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_7____Stub2LineDiscount_7_Format">
+          <DataField>Stub2LineAmount_7____Stub2LineDiscount_7_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_7_">
+          <DataField>Stub2DocDate_7_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_7_">
+          <DataField>Stub2DocNo_7_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_8_">
+          <DataField>Stub2LineAmount_8_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_8_Format">
+          <DataField>Stub2LineAmount_8_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_8_">
+          <DataField>Stub2LineDiscount_8_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_8_Format">
+          <DataField>Stub2LineDiscount_8_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_8____Stub2LineDiscount_8_">
+          <DataField>Stub2LineAmount_8____Stub2LineDiscount_8_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_8____Stub2LineDiscount_8_Format">
+          <DataField>Stub2LineAmount_8____Stub2LineDiscount_8_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_8_">
+          <DataField>Stub2DocDate_8_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_8_">
+          <DataField>Stub2DocNo_8_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_9_">
+          <DataField>Stub2LineAmount_9_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_9_Format">
+          <DataField>Stub2LineAmount_9_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_9_">
+          <DataField>Stub2LineDiscount_9_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_9_Format">
+          <DataField>Stub2LineDiscount_9_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_9____Stub2LineDiscount_9_">
+          <DataField>Stub2LineAmount_9____Stub2LineDiscount_9_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_9____Stub2LineDiscount_9_Format">
+          <DataField>Stub2LineAmount_9____Stub2LineDiscount_9_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_9_">
+          <DataField>Stub2DocDate_9_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_9_">
+          <DataField>Stub2DocNo_9_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_10_">
+          <DataField>Stub2LineAmount_10_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_10_Format">
+          <DataField>Stub2LineAmount_10_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_10_">
+          <DataField>Stub2LineDiscount_10_</DataField>
+        </Field>
+        <Field Name="Stub2LineDiscount_10_Format">
+          <DataField>Stub2LineDiscount_10_Format</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_10____Stub2LineDiscount_10_">
+          <DataField>Stub2LineAmount_10____Stub2LineDiscount_10_</DataField>
+        </Field>
+        <Field Name="Stub2LineAmount_10____Stub2LineDiscount_10_Format">
+          <DataField>Stub2LineAmount_10____Stub2LineDiscount_10_Format</DataField>
+        </Field>
+        <Field Name="Stub2DocDate_10_">
+          <DataField>Stub2DocDate_10_</DataField>
+        </Field>
+        <Field Name="Stub2DocNo_10_">
+          <DataField>Stub2DocNo_10_</DataField>
+        </Field>
+        <Field Name="TotalLineAmount_Control1480082">
+          <DataField>TotalLineAmount_Control1480082</DataField>
+        </Field>
+        <Field Name="TotalLineAmount_Control1480082Format">
+          <DataField>TotalLineAmount_Control1480082Format</DataField>
+        </Field>
+        <Field Name="TotalText_Control1480083">
+          <DataField>TotalText_Control1480083</DataField>
+        </Field>
+        <Field Name="Stub2PostingDescHeader">
+          <DataField>Stub2PostingDescHeader</DataField>
+        </Field>
+        <Field Name="Stub2PostingDesc_1_">
+          <DataField>Stub2PostingDesc_1_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDesc_2_">
+          <DataField>Stub2PostingDesc_2_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDesc_4_">
+          <DataField>Stub2PostingDesc_4_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDesc_3_">
+          <DataField>Stub2PostingDesc_3_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDesc_8_">
+          <DataField>Stub2PostingDesc_8_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDesc_7_">
+          <DataField>Stub2PostingDesc_7_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDesc_6_">
+          <DataField>Stub2PostingDesc_6_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDesc_5_">
+          <DataField>Stub2PostingDesc_5_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDesc_10_">
+          <DataField>Stub2PostingDesc_10_</DataField>
+        </Field>
+        <Field Name="Stub2PostingDesc_9_">
+          <DataField>Stub2PostingDesc_9_</DataField>
+        </Field>
+        <Field Name="CheckToAddr_5_">
+          <DataField>CheckToAddr_5_</DataField>
+        </Field>
+        <Field Name="CheckToAddr_4_">
+          <DataField>CheckToAddr_4_</DataField>
+        </Field>
+        <Field Name="CheckToAddr_3_">
+          <DataField>CheckToAddr_3_</DataField>
+        </Field>
+        <Field Name="CheckToAddr_2_">
+          <DataField>CheckToAddr_2_</DataField>
+        </Field>
+        <Field Name="CheckToAddr_01_">
+          <DataField>CheckToAddr_01_</DataField>
+        </Field>
+        <Field Name="VoidText">
+          <DataField>VoidText</DataField>
+        </Field>
+        <Field Name="BankCurrencyCode">
+          <DataField>BankCurrencyCode</DataField>
+        </Field>
+        <Field Name="DollarSignBefore_CheckAmountText_DollarSignAfter">
+          <DataField>DollarSignBefore_CheckAmountText_DollarSignAfter</DataField>
+        </Field>
+        <Field Name="DescriptionLine_1__">
+          <DataField>DescriptionLine_1__</DataField>
+        </Field>
+        <Field Name="DescriptionLine_2__">
+          <DataField>DescriptionLine_2__</DataField>
+        </Field>
+        <Field Name="DateIndicator">
+          <DataField>DateIndicator</DataField>
+        </Field>
+        <Field Name="CheckDateText_Control1020013">
+          <DataField>CheckDateText_Control1020013</DataField>
+        </Field>
+        <Field Name="CheckNoText_Control1020014">
+          <DataField>CheckNoText_Control1020014</DataField>
+        </Field>
+        <Field Name="CompanyAddr_6_">
+          <DataField>CompanyAddr_6_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_5_">
+          <DataField>CompanyAddr_5_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_4_">
+          <DataField>CompanyAddr_4_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_3_">
+          <DataField>CompanyAddr_3_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_2_">
+          <DataField>CompanyAddr_2_</DataField>
+        </Field>
+        <Field Name="CompanyAddr_1_">
+          <DataField>CompanyAddr_1_</DataField>
+        </Field>
+        <Field Name="CheckStyleIndex">
+          <DataField>CheckStyleIndex</DataField>
+        </Field>
+        <Field Name="CompanyAddr_7_">
+          <DataField>CompanyAddr_7_</DataField>
+        </Field>
+        <Field Name="PrintCheck_Number">
+          <DataField>PrintCheck_Number</DataField>
+        </Field>
+        <Field Name="CheckNoText_Control1480000Caption">
+          <DataField>CheckNoText_Control1480000Caption</DataField>
+        </Field>
+        <Field Name="EAVendorNo">
+          <DataField>EAVendorNo</DataField>
+        </Field>
+        <Field Name="EARowRefNbr">
+          <DataField>EARowRefNbr</DataField>
+        </Field>
+        <Field Name="EAAppliesToDocNo">
+          <DataField>EAAppliesToDocNo</DataField>
+        </Field>
+        <Field Name="EAExternalDocumentNo">
+          <DataField>EAExternalDocumentNo</DataField>
+        </Field>
+        <Field Name="EADueDate">
+          <DataField>EADueDate</DataField>
+        </Field>
+        <Field Name="EASelectedEntryCount">
+          <DataField>EASelectedEntryCount</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo1">
+          <DataField>EAFooterAppliesToDocNo1</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo2">
+          <DataField>EAFooterAppliesToDocNo2</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo3">
+          <DataField>EAFooterAppliesToDocNo3</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo4">
+          <DataField>EAFooterAppliesToDocNo4</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo5">
+          <DataField>EAFooterAppliesToDocNo5</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo6">
+          <DataField>EAFooterAppliesToDocNo6</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo7">
+          <DataField>EAFooterAppliesToDocNo7</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo8">
+          <DataField>EAFooterAppliesToDocNo8</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo9">
+          <DataField>EAFooterAppliesToDocNo9</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo10">
+          <DataField>EAFooterAppliesToDocNo10</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo11">
+          <DataField>EAFooterAppliesToDocNo11</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo12">
+          <DataField>EAFooterAppliesToDocNo12</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo13">
+          <DataField>EAFooterAppliesToDocNo13</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo14">
+          <DataField>EAFooterAppliesToDocNo14</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo15">
+          <DataField>EAFooterAppliesToDocNo15</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo16">
+          <DataField>EAFooterAppliesToDocNo16</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo17">
+          <DataField>EAFooterAppliesToDocNo17</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo18">
+          <DataField>EAFooterAppliesToDocNo18</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo19">
+          <DataField>EAFooterAppliesToDocNo19</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo20">
+          <DataField>EAFooterAppliesToDocNo20</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo21">
+          <DataField>EAFooterAppliesToDocNo21</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo22">
+          <DataField>EAFooterAppliesToDocNo22</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo23">
+          <DataField>EAFooterAppliesToDocNo23</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo24">
+          <DataField>EAFooterAppliesToDocNo24</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo25">
+          <DataField>EAFooterAppliesToDocNo25</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo26">
+          <DataField>EAFooterAppliesToDocNo26</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo27">
+          <DataField>EAFooterAppliesToDocNo27</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo28">
+          <DataField>EAFooterAppliesToDocNo28</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo29">
+          <DataField>EAFooterAppliesToDocNo29</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo30">
+          <DataField>EAFooterAppliesToDocNo30</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo31">
+          <DataField>EAFooterAppliesToDocNo31</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo32">
+          <DataField>EAFooterAppliesToDocNo32</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo33">
+          <DataField>EAFooterAppliesToDocNo33</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo34">
+          <DataField>EAFooterAppliesToDocNo34</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo35">
+          <DataField>EAFooterAppliesToDocNo35</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo36">
+          <DataField>EAFooterAppliesToDocNo36</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo37">
+          <DataField>EAFooterAppliesToDocNo37</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo38">
+          <DataField>EAFooterAppliesToDocNo38</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo39">
+          <DataField>EAFooterAppliesToDocNo39</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo40">
+          <DataField>EAFooterAppliesToDocNo40</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo41">
+          <DataField>EAFooterAppliesToDocNo41</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo42">
+          <DataField>EAFooterAppliesToDocNo42</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo43">
+          <DataField>EAFooterAppliesToDocNo43</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo44">
+          <DataField>EAFooterAppliesToDocNo44</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo45">
+          <DataField>EAFooterAppliesToDocNo45</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo46">
+          <DataField>EAFooterAppliesToDocNo46</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo47">
+          <DataField>EAFooterAppliesToDocNo47</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo48">
+          <DataField>EAFooterAppliesToDocNo48</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo49">
+          <DataField>EAFooterAppliesToDocNo49</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo50">
+          <DataField>EAFooterAppliesToDocNo50</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo51">
+          <DataField>EAFooterAppliesToDocNo51</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo52">
+          <DataField>EAFooterAppliesToDocNo52</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo53">
+          <DataField>EAFooterAppliesToDocNo53</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo54">
+          <DataField>EAFooterAppliesToDocNo54</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo55">
+          <DataField>EAFooterAppliesToDocNo55</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo56">
+          <DataField>EAFooterAppliesToDocNo56</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo57">
+          <DataField>EAFooterAppliesToDocNo57</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo58">
+          <DataField>EAFooterAppliesToDocNo58</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo59">
+          <DataField>EAFooterAppliesToDocNo59</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo60">
+          <DataField>EAFooterAppliesToDocNo60</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo61">
+          <DataField>EAFooterAppliesToDocNo61</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo62">
+          <DataField>EAFooterAppliesToDocNo62</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo63">
+          <DataField>EAFooterAppliesToDocNo63</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo64">
+          <DataField>EAFooterAppliesToDocNo64</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo65">
+          <DataField>EAFooterAppliesToDocNo65</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo66">
+          <DataField>EAFooterAppliesToDocNo66</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo67">
+          <DataField>EAFooterAppliesToDocNo67</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo68">
+          <DataField>EAFooterAppliesToDocNo68</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo69">
+          <DataField>EAFooterAppliesToDocNo69</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo70">
+          <DataField>EAFooterAppliesToDocNo70</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo71">
+          <DataField>EAFooterAppliesToDocNo71</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo72">
+          <DataField>EAFooterAppliesToDocNo72</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo73">
+          <DataField>EAFooterAppliesToDocNo73</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo74">
+          <DataField>EAFooterAppliesToDocNo74</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo75">
+          <DataField>EAFooterAppliesToDocNo75</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo76">
+          <DataField>EAFooterAppliesToDocNo76</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo77">
+          <DataField>EAFooterAppliesToDocNo77</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo78">
+          <DataField>EAFooterAppliesToDocNo78</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo79">
+          <DataField>EAFooterAppliesToDocNo79</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo80">
+          <DataField>EAFooterAppliesToDocNo80</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo81">
+          <DataField>EAFooterAppliesToDocNo81</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo82">
+          <DataField>EAFooterAppliesToDocNo82</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo83">
+          <DataField>EAFooterAppliesToDocNo83</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo84">
+          <DataField>EAFooterAppliesToDocNo84</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo85">
+          <DataField>EAFooterAppliesToDocNo85</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo86">
+          <DataField>EAFooterAppliesToDocNo86</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo87">
+          <DataField>EAFooterAppliesToDocNo87</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo88">
+          <DataField>EAFooterAppliesToDocNo88</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo89">
+          <DataField>EAFooterAppliesToDocNo89</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo90">
+          <DataField>EAFooterAppliesToDocNo90</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo91">
+          <DataField>EAFooterAppliesToDocNo91</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo92">
+          <DataField>EAFooterAppliesToDocNo92</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo93">
+          <DataField>EAFooterAppliesToDocNo93</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo94">
+          <DataField>EAFooterAppliesToDocNo94</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo95">
+          <DataField>EAFooterAppliesToDocNo95</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo96">
+          <DataField>EAFooterAppliesToDocNo96</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo97">
+          <DataField>EAFooterAppliesToDocNo97</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo98">
+          <DataField>EAFooterAppliesToDocNo98</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo99">
+          <DataField>EAFooterAppliesToDocNo99</DataField>
+        </Field>
+        <Field Name="EAFooterAppliesToDocNo100">
+          <DataField>EAFooterAppliesToDocNo100</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo1">
+          <DataField>EAFooterExternalDocumentNo1</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo2">
+          <DataField>EAFooterExternalDocumentNo2</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo3">
+          <DataField>EAFooterExternalDocumentNo3</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo4">
+          <DataField>EAFooterExternalDocumentNo4</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo5">
+          <DataField>EAFooterExternalDocumentNo5</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo6">
+          <DataField>EAFooterExternalDocumentNo6</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo7">
+          <DataField>EAFooterExternalDocumentNo7</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo8">
+          <DataField>EAFooterExternalDocumentNo8</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo9">
+          <DataField>EAFooterExternalDocumentNo9</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo10">
+          <DataField>EAFooterExternalDocumentNo10</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo11">
+          <DataField>EAFooterExternalDocumentNo11</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo12">
+          <DataField>EAFooterExternalDocumentNo12</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo13">
+          <DataField>EAFooterExternalDocumentNo13</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo14">
+          <DataField>EAFooterExternalDocumentNo14</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo15">
+          <DataField>EAFooterExternalDocumentNo15</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo16">
+          <DataField>EAFooterExternalDocumentNo16</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo17">
+          <DataField>EAFooterExternalDocumentNo17</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo18">
+          <DataField>EAFooterExternalDocumentNo18</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo19">
+          <DataField>EAFooterExternalDocumentNo19</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo20">
+          <DataField>EAFooterExternalDocumentNo20</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo21">
+          <DataField>EAFooterExternalDocumentNo21</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo22">
+          <DataField>EAFooterExternalDocumentNo22</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo23">
+          <DataField>EAFooterExternalDocumentNo23</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo24">
+          <DataField>EAFooterExternalDocumentNo24</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo25">
+          <DataField>EAFooterExternalDocumentNo25</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo26">
+          <DataField>EAFooterExternalDocumentNo26</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo27">
+          <DataField>EAFooterExternalDocumentNo27</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo28">
+          <DataField>EAFooterExternalDocumentNo28</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo29">
+          <DataField>EAFooterExternalDocumentNo29</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo30">
+          <DataField>EAFooterExternalDocumentNo30</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo31">
+          <DataField>EAFooterExternalDocumentNo31</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo32">
+          <DataField>EAFooterExternalDocumentNo32</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo33">
+          <DataField>EAFooterExternalDocumentNo33</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo34">
+          <DataField>EAFooterExternalDocumentNo34</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo35">
+          <DataField>EAFooterExternalDocumentNo35</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo36">
+          <DataField>EAFooterExternalDocumentNo36</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo37">
+          <DataField>EAFooterExternalDocumentNo37</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo38">
+          <DataField>EAFooterExternalDocumentNo38</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo39">
+          <DataField>EAFooterExternalDocumentNo39</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo40">
+          <DataField>EAFooterExternalDocumentNo40</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo41">
+          <DataField>EAFooterExternalDocumentNo41</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo42">
+          <DataField>EAFooterExternalDocumentNo42</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo43">
+          <DataField>EAFooterExternalDocumentNo43</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo44">
+          <DataField>EAFooterExternalDocumentNo44</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo45">
+          <DataField>EAFooterExternalDocumentNo45</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo46">
+          <DataField>EAFooterExternalDocumentNo46</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo47">
+          <DataField>EAFooterExternalDocumentNo47</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo48">
+          <DataField>EAFooterExternalDocumentNo48</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo49">
+          <DataField>EAFooterExternalDocumentNo49</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo50">
+          <DataField>EAFooterExternalDocumentNo50</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo51">
+          <DataField>EAFooterExternalDocumentNo51</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo52">
+          <DataField>EAFooterExternalDocumentNo52</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo53">
+          <DataField>EAFooterExternalDocumentNo53</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo54">
+          <DataField>EAFooterExternalDocumentNo54</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo55">
+          <DataField>EAFooterExternalDocumentNo55</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo56">
+          <DataField>EAFooterExternalDocumentNo56</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo57">
+          <DataField>EAFooterExternalDocumentNo57</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo58">
+          <DataField>EAFooterExternalDocumentNo58</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo59">
+          <DataField>EAFooterExternalDocumentNo59</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo60">
+          <DataField>EAFooterExternalDocumentNo60</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo61">
+          <DataField>EAFooterExternalDocumentNo61</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo62">
+          <DataField>EAFooterExternalDocumentNo62</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo63">
+          <DataField>EAFooterExternalDocumentNo63</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo64">
+          <DataField>EAFooterExternalDocumentNo64</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo65">
+          <DataField>EAFooterExternalDocumentNo65</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo66">
+          <DataField>EAFooterExternalDocumentNo66</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo67">
+          <DataField>EAFooterExternalDocumentNo67</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo68">
+          <DataField>EAFooterExternalDocumentNo68</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo69">
+          <DataField>EAFooterExternalDocumentNo69</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo70">
+          <DataField>EAFooterExternalDocumentNo70</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo71">
+          <DataField>EAFooterExternalDocumentNo71</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo72">
+          <DataField>EAFooterExternalDocumentNo72</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo73">
+          <DataField>EAFooterExternalDocumentNo73</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo74">
+          <DataField>EAFooterExternalDocumentNo74</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo75">
+          <DataField>EAFooterExternalDocumentNo75</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo76">
+          <DataField>EAFooterExternalDocumentNo76</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo77">
+          <DataField>EAFooterExternalDocumentNo77</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo78">
+          <DataField>EAFooterExternalDocumentNo78</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo79">
+          <DataField>EAFooterExternalDocumentNo79</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo80">
+          <DataField>EAFooterExternalDocumentNo80</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo81">
+          <DataField>EAFooterExternalDocumentNo81</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo82">
+          <DataField>EAFooterExternalDocumentNo82</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo83">
+          <DataField>EAFooterExternalDocumentNo83</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo84">
+          <DataField>EAFooterExternalDocumentNo84</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo85">
+          <DataField>EAFooterExternalDocumentNo85</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo86">
+          <DataField>EAFooterExternalDocumentNo86</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo87">
+          <DataField>EAFooterExternalDocumentNo87</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo88">
+          <DataField>EAFooterExternalDocumentNo88</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo89">
+          <DataField>EAFooterExternalDocumentNo89</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo90">
+          <DataField>EAFooterExternalDocumentNo90</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo91">
+          <DataField>EAFooterExternalDocumentNo91</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo92">
+          <DataField>EAFooterExternalDocumentNo92</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo93">
+          <DataField>EAFooterExternalDocumentNo93</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo94">
+          <DataField>EAFooterExternalDocumentNo94</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo95">
+          <DataField>EAFooterExternalDocumentNo95</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo96">
+          <DataField>EAFooterExternalDocumentNo96</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo97">
+          <DataField>EAFooterExternalDocumentNo97</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo98">
+          <DataField>EAFooterExternalDocumentNo98</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo99">
+          <DataField>EAFooterExternalDocumentNo99</DataField>
+        </Field>
+        <Field Name="EAFooterExternalDocumentNo100">
+          <DataField>EAFooterExternalDocumentNo100</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate1">
+          <DataField>EAFooterDueDate1</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate2">
+          <DataField>EAFooterDueDate2</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate3">
+          <DataField>EAFooterDueDate3</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate4">
+          <DataField>EAFooterDueDate4</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate5">
+          <DataField>EAFooterDueDate5</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate6">
+          <DataField>EAFooterDueDate6</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate7">
+          <DataField>EAFooterDueDate7</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate8">
+          <DataField>EAFooterDueDate8</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate9">
+          <DataField>EAFooterDueDate9</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate10">
+          <DataField>EAFooterDueDate10</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate11">
+          <DataField>EAFooterDueDate11</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate12">
+          <DataField>EAFooterDueDate12</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate13">
+          <DataField>EAFooterDueDate13</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate14">
+          <DataField>EAFooterDueDate14</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate15">
+          <DataField>EAFooterDueDate15</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate16">
+          <DataField>EAFooterDueDate16</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate17">
+          <DataField>EAFooterDueDate17</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate18">
+          <DataField>EAFooterDueDate18</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate19">
+          <DataField>EAFooterDueDate19</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate20">
+          <DataField>EAFooterDueDate20</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate21">
+          <DataField>EAFooterDueDate21</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate22">
+          <DataField>EAFooterDueDate22</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate23">
+          <DataField>EAFooterDueDate23</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate24">
+          <DataField>EAFooterDueDate24</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate25">
+          <DataField>EAFooterDueDate25</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate26">
+          <DataField>EAFooterDueDate26</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate27">
+          <DataField>EAFooterDueDate27</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate28">
+          <DataField>EAFooterDueDate28</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate29">
+          <DataField>EAFooterDueDate29</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate30">
+          <DataField>EAFooterDueDate30</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate31">
+          <DataField>EAFooterDueDate31</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate32">
+          <DataField>EAFooterDueDate32</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate33">
+          <DataField>EAFooterDueDate33</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate34">
+          <DataField>EAFooterDueDate34</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate35">
+          <DataField>EAFooterDueDate35</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate36">
+          <DataField>EAFooterDueDate36</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate37">
+          <DataField>EAFooterDueDate37</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate38">
+          <DataField>EAFooterDueDate38</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate39">
+          <DataField>EAFooterDueDate39</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate40">
+          <DataField>EAFooterDueDate40</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate41">
+          <DataField>EAFooterDueDate41</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate42">
+          <DataField>EAFooterDueDate42</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate43">
+          <DataField>EAFooterDueDate43</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate44">
+          <DataField>EAFooterDueDate44</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate45">
+          <DataField>EAFooterDueDate45</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate46">
+          <DataField>EAFooterDueDate46</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate47">
+          <DataField>EAFooterDueDate47</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate48">
+          <DataField>EAFooterDueDate48</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate49">
+          <DataField>EAFooterDueDate49</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate50">
+          <DataField>EAFooterDueDate50</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate51">
+          <DataField>EAFooterDueDate51</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate52">
+          <DataField>EAFooterDueDate52</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate53">
+          <DataField>EAFooterDueDate53</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate54">
+          <DataField>EAFooterDueDate54</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate55">
+          <DataField>EAFooterDueDate55</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate56">
+          <DataField>EAFooterDueDate56</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate57">
+          <DataField>EAFooterDueDate57</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate58">
+          <DataField>EAFooterDueDate58</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate59">
+          <DataField>EAFooterDueDate59</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate60">
+          <DataField>EAFooterDueDate60</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate61">
+          <DataField>EAFooterDueDate61</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate62">
+          <DataField>EAFooterDueDate62</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate63">
+          <DataField>EAFooterDueDate63</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate64">
+          <DataField>EAFooterDueDate64</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate65">
+          <DataField>EAFooterDueDate65</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate66">
+          <DataField>EAFooterDueDate66</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate67">
+          <DataField>EAFooterDueDate67</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate68">
+          <DataField>EAFooterDueDate68</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate69">
+          <DataField>EAFooterDueDate69</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate70">
+          <DataField>EAFooterDueDate70</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate71">
+          <DataField>EAFooterDueDate71</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate72">
+          <DataField>EAFooterDueDate72</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate73">
+          <DataField>EAFooterDueDate73</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate74">
+          <DataField>EAFooterDueDate74</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate75">
+          <DataField>EAFooterDueDate75</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate76">
+          <DataField>EAFooterDueDate76</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate77">
+          <DataField>EAFooterDueDate77</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate78">
+          <DataField>EAFooterDueDate78</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate79">
+          <DataField>EAFooterDueDate79</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate80">
+          <DataField>EAFooterDueDate80</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate81">
+          <DataField>EAFooterDueDate81</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate82">
+          <DataField>EAFooterDueDate82</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate83">
+          <DataField>EAFooterDueDate83</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate84">
+          <DataField>EAFooterDueDate84</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate85">
+          <DataField>EAFooterDueDate85</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate86">
+          <DataField>EAFooterDueDate86</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate87">
+          <DataField>EAFooterDueDate87</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate88">
+          <DataField>EAFooterDueDate88</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate89">
+          <DataField>EAFooterDueDate89</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate90">
+          <DataField>EAFooterDueDate90</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate91">
+          <DataField>EAFooterDueDate91</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate92">
+          <DataField>EAFooterDueDate92</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate93">
+          <DataField>EAFooterDueDate93</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate94">
+          <DataField>EAFooterDueDate94</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate95">
+          <DataField>EAFooterDueDate95</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate96">
+          <DataField>EAFooterDueDate96</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate97">
+          <DataField>EAFooterDueDate97</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate98">
+          <DataField>EAFooterDueDate98</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate99">
+          <DataField>EAFooterDueDate99</DataField>
+        </Field>
+        <Field Name="EAFooterDueDate100">
+          <DataField>EAFooterDueDate100</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>
