@@ -7,7 +7,7 @@ pageextension 50110 PageExtension50110 extends Microsoft.Finance.GeneralLedger.J
             field("Your Reference"; Rec."Your Reference")
             {
                 ApplicationArea = All;
-                Editable = false;
+                Editable = true;
             }
         }
         addafter("Your Reference")
