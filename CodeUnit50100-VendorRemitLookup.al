@@ -13,7 +13,7 @@ codeunit 50100 "Vendor Remit Lookup"
 
         DefaultDim.SetRange("Table ID", Database::Vendor);
         DefaultDim.SetRange("No.", VendorNo);
-        DefaultDim.SetFilter("Dimension Code", '%1|%2|%3|%4|%5', 'REMIT1', 'REMIT2', 'REMIT3', 'REMIT4', 'REMIT5');
+        DefaultDim.SetFilter("Dimension Code", '%1|%2|%3|%4|%5', 'REMIT1', 'REMIT2', 'REMIT3', 'REMIT4', 'REMIT5', 'REMIT6', 'REMIT7', 'REMIT8', 'REMIT9');
 
         if not DefaultDim.FindSet() then begin
             ResultBuffer."Vendor No." := VendorNo;

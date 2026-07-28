@@ -17,3 +17,4 @@ pageextension 50107 "Posted PI List Extension" extends "Posted Purchase Invoices
         }
     }
 }
+
