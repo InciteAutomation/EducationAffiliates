@@ -29,7 +29,7 @@ pageextension 50104 "PI List Extension" extends "Purchase Invoices"
             action(PostSelectedWithoutVendorDimensions)
             {
                 ApplicationArea = All;
-                Caption = 'Post Selected Without Vendor Dimensions';
+                Caption = 'Post NEW';
                 ToolTip = 'Posts the selected purchase invoices without requiring COMPANY and REMIT dimensions.';
                 Image = PostBatch;
                 Promoted = true;

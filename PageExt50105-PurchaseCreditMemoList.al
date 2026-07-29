@@ -23,7 +23,7 @@ pageextension 50105 "PCM List Extension" extends "Purchase Credit Memos"
             action(PostSelectedWithoutVendorDimensions)
             {
                 ApplicationArea = All;
-                Caption = 'Post Selected Without Vendor Dimensions';
+                Caption = 'Post NEW';
                 ToolTip = 'Posts the selected purchase credit memos without requiring COMPANY and REMIT dimensions.';
                 Image = PostBatch;
                 Promoted = true;

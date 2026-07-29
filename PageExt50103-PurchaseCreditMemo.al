@@ -23,7 +23,7 @@ pageextension 50103 "PCM Card Extension" extends "Purchase Credit Memo"
             action(PostWithoutVendorDimensions)
             {
                 ApplicationArea = All;
-                Caption = 'Post Without Vendor Dimensions';
+                Caption = 'Post NEW';
                 ToolTip = 'Posts the purchase credit memo without enforcing Code Mandatory dimensions configured on the vendor.';
                 Image = Post;
                 Promoted = true;

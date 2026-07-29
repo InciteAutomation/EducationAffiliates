@@ -7,7 +7,7 @@ pageextension 50113 "Payment Journal Dim Bypass" extends "Payment Journal"
             action(PostWithoutVendorDimensions)
             {
                 ApplicationArea = All;
-                Caption = 'Post Without Vendor Dimensions';
+                Caption = 'Post NEW';
                 ToolTip =
                     'Posts all lines in the current payment journal batch without requiring COMPANY and REMIT1 through REMIT5 vendor dimensions.';
                 Image = PostBatch;
