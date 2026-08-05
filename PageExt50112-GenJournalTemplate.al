@@ -3,6 +3,7 @@ pageextension 50112 PageExtension50112 extends Microsoft.Finance.GeneralLedger.J
     layout
     {
         moveafter("Posting Date"; "Account No.")
+        movebefore("Account No."; "Account Type")
         moveafter("Account No."; "Shortcut Dimension 1 Code")
         moveafter("Shortcut Dimension 1 Code"; "Shortcut Dimension 2 Code")
         moveafter("Shortcut Dimension 2 Code"; ShortcutDimCode3)
@@ -16,6 +17,3 @@ pageextension 50112 PageExtension50112 extends Microsoft.Finance.GeneralLedger.J
         moveafter("Amount (LCY)"; "Document No.")
     }
 }
-
-// Company code after account number
-// Your Reference Editable

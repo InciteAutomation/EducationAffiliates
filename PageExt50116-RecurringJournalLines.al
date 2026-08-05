@@ -3,6 +3,7 @@ pageextension 50116 "Recurring General Journal" extends Microsoft.Finance.Genera
     layout
     {
         moveafter("Posting Date"; "Account No.")
+        movebefore("Account No."; "Account Type")
         moveafter("Account No."; "Shortcut Dimension 1 Code")
         moveafter("Shortcut Dimension 1 Code"; "Shortcut Dimension 2 Code")
         moveafter("Document Date"; ShortcutDimCode3)
