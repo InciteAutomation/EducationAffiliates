@@ -1,5 +1,5 @@
 /*
-    Object: Report Extension 50195 "EA Check Vendor No."
+    Object: Report Extension 50100 "EA Check Vendor No."
     Extends: Standard report "Check (Stub/Check/Stub)"
 
     PURPOSE
@@ -84,6 +84,11 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
             column(EAVendorNo; EAVendorNo)
             {
                 Caption = 'Vendor No.';
+            }
+
+            column(EAVendorName; EAVendorName)
+            {
+                Caption = 'Vendor Name';
             }
 
             /*
@@ -501,6 +506,7 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
             Vendor associated with the current payment journal line.
         */
         EAVendorNo: Code[20];
+        EAVendorName: Text[100];
 
         /*
             Parallel arrays.
@@ -549,6 +555,7 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
         RowNo: Integer;
     begin
         Clear(EAVendorNo);
+        Clear(EAVendorName);
         Clear(EASelectedEntryCount);
 
         for RowNo := 1 to ArrayLen(EARefNbr) do begin
@@ -584,10 +591,11 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
             Vendor on the main account side.
         */
         if GenJournalLine."Account Type" =
-           GenJournalLine."Account Type"::Vendor
+        GenJournalLine."Account Type"::Vendor
         then
             if Vendor.Get(GenJournalLine."Account No.") then begin
                 EAVendorNo := Vendor."No.";
+                EAVendorName := Vendor.Name;
                 exit;
             end;
 
@@ -595,10 +603,12 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
             Vendor on the balancing-account side.
         */
         if GenJournalLine."Bal. Account Type" =
-           GenJournalLine."Bal. Account Type"::Vendor
+        GenJournalLine."Bal. Account Type"::Vendor
         then
-            if Vendor.Get(GenJournalLine."Bal. Account No.") then
+            if Vendor.Get(GenJournalLine."Bal. Account No.") then begin
                 EAVendorNo := Vendor."No.";
+                EAVendorName := Vendor.Name;
+            end;
     end;
 
     /*
