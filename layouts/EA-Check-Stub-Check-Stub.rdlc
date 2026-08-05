@@ -636,7 +636,7 @@
                                 <TextRun>
                                   <Value>=Last(Fields!TotalText.Value) + Chr(177)
  + Cstr(Last(Fields!TotalLineAmount.Value)) + Chr(177)
- + Last(Fields!CheckToAddr_1_.Value) + Chr(177)
+ + Last(Fields!EAVendorName.Value) + Chr(177)
  + Last(Fields!CheckDateText.Value) + Chr(177)
  + Last(Fields!CheckNoText_Control1480000Caption.Value) + Chr(177)
  + Cstr(Last(Fields!CheckNoText_Control1480000.Value)) + Chr(177)
@@ -1109,7 +1109,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Cstr(Last(Fields!CheckToAddr_1_.Value)) + Chr(177)
+                                  <Value>=Cstr(Last(Fields!EAVendorName.Value)) + Chr(177)
                                 + Cstr(Last(Fields!CheckDateText.Value)) + Chr(177)
                                 + Cstr(Last(Fields!CheckNoTextCaption.Value)) + Chr(177)
                                 + Cstr(Last(Fields!CheckNoText.Value)) + Chr(177)
@@ -1645,7 +1645,7 @@ ORDER OF</Value>
                 </Paragraph>
               </Paragraphs>
               <Top>3.6701in</Top>
-              <Left>0.9723in</Left>
+              <Left>0.9098in</Left>
               <Height>0.16654in</Height>
               <Width>1.28562in</Width>
               <ZIndex>11</ZIndex>
@@ -1974,7 +1974,7 @@ ORDER OF</Value>
               <Top>2.43744in</Top>
               <Left>0.81597in</Left>
               <Height>0.16654in</Height>
-              <Width>2.48031in</Width>
+              <Width>3.43777in</Width>
               <ZIndex>23</ZIndex>
               <Style />
             </Textbox>
@@ -2022,7 +2022,7 @@ ORDER OF</Value>
               <Top>2.60658in</Top>
               <Left>0.81597in</Left>
               <Height>0.16654in</Height>
-              <Width>2.48031in</Width>
+              <Width>3.42475in</Width>
               <ZIndex>25</ZIndex>
               <Style />
             </Textbox>
@@ -2047,7 +2047,7 @@ ORDER OF</Value>
               <Top>2.78526in</Top>
               <Left>0.82639in</Left>
               <Height>0.16654in</Height>
-              <Width>2.48031in</Width>
+              <Width>3.42475in</Width>
               <ZIndex>26</ZIndex>
               <Style />
             </Textbox>
@@ -2103,7 +2103,7 @@ ORDER OF</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Cstr(Choose(104,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
+                      <Value>=Code.HideDomesticCountry(ReportItems!FooterInfo.Value, 104)</Value>
                       <Style>
                         <FontFamily>Courier New</FontFamily>
                       </Style>
@@ -2117,10 +2117,10 @@ ORDER OF</Value>
               <Top>2.95787in</Top>
               <Left>0.82639in</Left>
               <Height>0.16654in</Height>
-              <Width>2.48031in</Width>
+              <Width>3.42475in</Width>
               <ZIndex>29</ZIndex>
               <Visibility>
-                <Hidden>true</Hidden>
+                <Hidden>false</Hidden>
               </Visibility>
               <Style />
             </Textbox>
@@ -2130,7 +2130,7 @@ ORDER OF</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Cstr(Choose(105,Split(Cstr(ReportItems!FooterInfo.Value), Chr(177))))</Value>
+                      <Value>=Code.HideDomesticCountry(ReportItems!FooterInfo.Value, 105)</Value>
                       <Style>
                         <FontFamily>Courier New</FontFamily>
                       </Style>
@@ -2144,10 +2144,10 @@ ORDER OF</Value>
               <Top>3.13047in</Top>
               <Left>0.82899in</Left>
               <Height>0.16353in</Height>
-              <Width>2.48031in</Width>
+              <Width>3.42475in</Width>
               <ZIndex>30</ZIndex>
               <Visibility>
-                <Hidden>true</Hidden>
+                <Hidden>false</Hidden>
               </Visibility>
               <Style />
             </Textbox>
@@ -5427,6 +5427,35 @@ Public Function LogicalFooterRefNbr( _
 
     Return ""
 End Function
+
+Public Function HideDomesticCountry(
+    ByVal footerInfo As Object,
+    ByVal position As Integer
+) As String
+
+    If footerInfo Is Nothing Then
+        Return ""
+    End If
+
+    Dim parts() As String = Split(CStr(footerInfo), Chr(177))
+
+    If position &lt; 1 OrElse position &gt; parts.Length Then
+        Return ""
+    End If
+
+    Dim value As String = Trim(parts(position - 1))
+    Dim normalized As String = UCase(value)
+
+    If normalized = "US" _
+        OrElse normalized = "USA" _
+        OrElse normalized = "UNITED STATES" _
+        OrElse normalized = "UNITED STATES OF AMERICA" Then
+        Return ""
+    End If
+
+    Return value
+End Function
+
 </Code>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
@@ -6013,6 +6042,9 @@ End Function
         </Field>
         <Field Name="EAVendorNo">
           <DataField>EAVendorNo</DataField>
+        </Field>
+        <Field Name="EAVendorName">
+          <DataField>EAVendorName</DataField>
         </Field>
         <Field Name="EARowRefNbr">
           <DataField>EARowRefNbr</DataField>
