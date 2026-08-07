@@ -469,6 +469,114 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
             column(EAFooterDueDate98; EAInvoicePostingDate[98]) { }
             column(EAFooterDueDate99; EAInvoicePostingDate[99]) { }
             column(EAFooterDueDate100; EAInvoicePostingDate[100]) { }
+
+            /*
+                Company Code mappings 1-100.
+
+                Company Code is sourced from Vendor Ledger Entry.
+                "Global Dimension 1 Code", whose configured caption is
+                Company Code in this environment.
+            */
+            column(EAFooterCompanyCode1; EACompanyCode[1]) { }
+            column(EAFooterCompanyCode2; EACompanyCode[2]) { }
+            column(EAFooterCompanyCode3; EACompanyCode[3]) { }
+            column(EAFooterCompanyCode4; EACompanyCode[4]) { }
+            column(EAFooterCompanyCode5; EACompanyCode[5]) { }
+            column(EAFooterCompanyCode6; EACompanyCode[6]) { }
+            column(EAFooterCompanyCode7; EACompanyCode[7]) { }
+            column(EAFooterCompanyCode8; EACompanyCode[8]) { }
+            column(EAFooterCompanyCode9; EACompanyCode[9]) { }
+            column(EAFooterCompanyCode10; EACompanyCode[10]) { }
+            column(EAFooterCompanyCode11; EACompanyCode[11]) { }
+            column(EAFooterCompanyCode12; EACompanyCode[12]) { }
+            column(EAFooterCompanyCode13; EACompanyCode[13]) { }
+            column(EAFooterCompanyCode14; EACompanyCode[14]) { }
+            column(EAFooterCompanyCode15; EACompanyCode[15]) { }
+            column(EAFooterCompanyCode16; EACompanyCode[16]) { }
+            column(EAFooterCompanyCode17; EACompanyCode[17]) { }
+            column(EAFooterCompanyCode18; EACompanyCode[18]) { }
+            column(EAFooterCompanyCode19; EACompanyCode[19]) { }
+            column(EAFooterCompanyCode20; EACompanyCode[20]) { }
+            column(EAFooterCompanyCode21; EACompanyCode[21]) { }
+            column(EAFooterCompanyCode22; EACompanyCode[22]) { }
+            column(EAFooterCompanyCode23; EACompanyCode[23]) { }
+            column(EAFooterCompanyCode24; EACompanyCode[24]) { }
+            column(EAFooterCompanyCode25; EACompanyCode[25]) { }
+            column(EAFooterCompanyCode26; EACompanyCode[26]) { }
+            column(EAFooterCompanyCode27; EACompanyCode[27]) { }
+            column(EAFooterCompanyCode28; EACompanyCode[28]) { }
+            column(EAFooterCompanyCode29; EACompanyCode[29]) { }
+            column(EAFooterCompanyCode30; EACompanyCode[30]) { }
+            column(EAFooterCompanyCode31; EACompanyCode[31]) { }
+            column(EAFooterCompanyCode32; EACompanyCode[32]) { }
+            column(EAFooterCompanyCode33; EACompanyCode[33]) { }
+            column(EAFooterCompanyCode34; EACompanyCode[34]) { }
+            column(EAFooterCompanyCode35; EACompanyCode[35]) { }
+            column(EAFooterCompanyCode36; EACompanyCode[36]) { }
+            column(EAFooterCompanyCode37; EACompanyCode[37]) { }
+            column(EAFooterCompanyCode38; EACompanyCode[38]) { }
+            column(EAFooterCompanyCode39; EACompanyCode[39]) { }
+            column(EAFooterCompanyCode40; EACompanyCode[40]) { }
+            column(EAFooterCompanyCode41; EACompanyCode[41]) { }
+            column(EAFooterCompanyCode42; EACompanyCode[42]) { }
+            column(EAFooterCompanyCode43; EACompanyCode[43]) { }
+            column(EAFooterCompanyCode44; EACompanyCode[44]) { }
+            column(EAFooterCompanyCode45; EACompanyCode[45]) { }
+            column(EAFooterCompanyCode46; EACompanyCode[46]) { }
+            column(EAFooterCompanyCode47; EACompanyCode[47]) { }
+            column(EAFooterCompanyCode48; EACompanyCode[48]) { }
+            column(EAFooterCompanyCode49; EACompanyCode[49]) { }
+            column(EAFooterCompanyCode50; EACompanyCode[50]) { }
+            column(EAFooterCompanyCode51; EACompanyCode[51]) { }
+            column(EAFooterCompanyCode52; EACompanyCode[52]) { }
+            column(EAFooterCompanyCode53; EACompanyCode[53]) { }
+            column(EAFooterCompanyCode54; EACompanyCode[54]) { }
+            column(EAFooterCompanyCode55; EACompanyCode[55]) { }
+            column(EAFooterCompanyCode56; EACompanyCode[56]) { }
+            column(EAFooterCompanyCode57; EACompanyCode[57]) { }
+            column(EAFooterCompanyCode58; EACompanyCode[58]) { }
+            column(EAFooterCompanyCode59; EACompanyCode[59]) { }
+            column(EAFooterCompanyCode60; EACompanyCode[60]) { }
+            column(EAFooterCompanyCode61; EACompanyCode[61]) { }
+            column(EAFooterCompanyCode62; EACompanyCode[62]) { }
+            column(EAFooterCompanyCode63; EACompanyCode[63]) { }
+            column(EAFooterCompanyCode64; EACompanyCode[64]) { }
+            column(EAFooterCompanyCode65; EACompanyCode[65]) { }
+            column(EAFooterCompanyCode66; EACompanyCode[66]) { }
+            column(EAFooterCompanyCode67; EACompanyCode[67]) { }
+            column(EAFooterCompanyCode68; EACompanyCode[68]) { }
+            column(EAFooterCompanyCode69; EACompanyCode[69]) { }
+            column(EAFooterCompanyCode70; EACompanyCode[70]) { }
+            column(EAFooterCompanyCode71; EACompanyCode[71]) { }
+            column(EAFooterCompanyCode72; EACompanyCode[72]) { }
+            column(EAFooterCompanyCode73; EACompanyCode[73]) { }
+            column(EAFooterCompanyCode74; EACompanyCode[74]) { }
+            column(EAFooterCompanyCode75; EACompanyCode[75]) { }
+            column(EAFooterCompanyCode76; EACompanyCode[76]) { }
+            column(EAFooterCompanyCode77; EACompanyCode[77]) { }
+            column(EAFooterCompanyCode78; EACompanyCode[78]) { }
+            column(EAFooterCompanyCode79; EACompanyCode[79]) { }
+            column(EAFooterCompanyCode80; EACompanyCode[80]) { }
+            column(EAFooterCompanyCode81; EACompanyCode[81]) { }
+            column(EAFooterCompanyCode82; EACompanyCode[82]) { }
+            column(EAFooterCompanyCode83; EACompanyCode[83]) { }
+            column(EAFooterCompanyCode84; EACompanyCode[84]) { }
+            column(EAFooterCompanyCode85; EACompanyCode[85]) { }
+            column(EAFooterCompanyCode86; EACompanyCode[86]) { }
+            column(EAFooterCompanyCode87; EACompanyCode[87]) { }
+            column(EAFooterCompanyCode88; EACompanyCode[88]) { }
+            column(EAFooterCompanyCode89; EACompanyCode[89]) { }
+            column(EAFooterCompanyCode90; EACompanyCode[90]) { }
+            column(EAFooterCompanyCode91; EACompanyCode[91]) { }
+            column(EAFooterCompanyCode92; EACompanyCode[92]) { }
+            column(EAFooterCompanyCode93; EACompanyCode[93]) { }
+            column(EAFooterCompanyCode94; EACompanyCode[94]) { }
+            column(EAFooterCompanyCode95; EACompanyCode[95]) { }
+            column(EAFooterCompanyCode96; EACompanyCode[96]) { }
+            column(EAFooterCompanyCode97; EACompanyCode[97]) { }
+            column(EAFooterCompanyCode98; EACompanyCode[98]) { }
+            column(EAFooterCompanyCode99; EACompanyCode[99]) { }
+            column(EAFooterCompanyCode100; EACompanyCode[100]) { }
         }
 
         /*
@@ -526,6 +634,7 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
         EARefNbr: array[100] of Code[20];
         EAInvoiceNbr: array[100] of Code[35];
         EAInvoicePostingDate: array[100] of Date;
+        EACompanyCode: array[100] of Code[20];
 
         /*
             Internal deduplication helper.
@@ -562,6 +671,7 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
             Clear(EARefNbr[RowNo]);
             Clear(EAInvoiceNbr[RowNo]);
             Clear(EAInvoicePostingDate[RowNo]);
+            Clear(EACompanyCode[RowNo]);
             Clear(EAVendorLedgerEntryNo[RowNo]);
         end;
     end;
@@ -725,7 +835,8 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
         if not RelatedGenJournalLine.FindSet() then begin
             AddApplicationFromDocumentNo(
                 EAVendorNo,
-                GenJournalLine."Applies-to Doc. No.");
+                GenJournalLine."Applies-to Doc. No.",
+                GenJournalLine."Shortcut Dimension 1 Code");
 
             exit;
         end;
@@ -776,7 +887,8 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
                 AddVendorLedgerEntry(VendorLedgerEntry)
             else
                 AddRefNbrOnly(
-                    RelatedGenJournalLine."Applies-to Doc. No.");
+                    RelatedGenJournalLine."Applies-to Doc. No.",
+                    RelatedGenJournalLine."Shortcut Dimension 1 Code");
 
         until RelatedGenJournalLine.Next() = 0;
     end;
@@ -794,7 +906,8 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
     */
     local procedure AddApplicationFromDocumentNo(
         VendorNo: Code[20];
-        AppliesToDocumentNo: Code[20])
+        AppliesToDocumentNo: Code[20];
+        CompanyCode: Code[20])
     var
         VendorLedgerEntry: Record "Vendor Ledger Entry";
     begin
@@ -831,7 +944,7 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
         /*
             Preserve the reference number even if no ledger entry is found.
         */
-        AddRefNbrOnly(AppliesToDocumentNo);
+        AddRefNbrOnly(AppliesToDocumentNo, CompanyCode);
     end;
 
     /*
@@ -901,6 +1014,14 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
         */
         EAInvoicePostingDate[EASelectedEntryCount] :=
             VendorLedgerEntry."Posting Date";
+
+        /*
+            Company Code shown on both stubs.
+
+            The environment uses Global Dimension 1 as Company Code.
+        */
+        EACompanyCode[EASelectedEntryCount] :=
+            VendorLedgerEntry."Global Dimension 1 Code";
     end;
 
     /*
@@ -916,7 +1037,8 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
         causing the extension itself to fail.
     */
     local procedure AddRefNbrOnly(
-        AppliesToDocumentNo: Code[20])
+        AppliesToDocumentNo: Code[20];
+        CompanyCode: Code[20])
     begin
         if AppliesToDocumentNo = '' then
             exit;
@@ -935,6 +1057,7 @@ reportextension 50100 "EA Check Vendor No." extends "Check (Stub/Check/Stub)"
 
         EASelectedEntryCount += 1;
         EARefNbr[EASelectedEntryCount] := AppliesToDocumentNo;
+        EACompanyCode[EASelectedEntryCount] := CompanyCode;
     end;
 
     /*
