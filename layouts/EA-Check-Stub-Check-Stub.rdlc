@@ -220,7 +220,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Disc Taken</Value>
+                                  <Value>Company Code</Value>
                                   <Style>
                                     <FontFamily>Times New Roman</FontFamily>
                                     <FontSize>9pt</FontSize>
@@ -545,7 +545,112 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!LineDiscount.Value</Value>
+                                  <Value>=IIF(
+    Len(Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value))))) = 0,
+    Nothing,
+    Switch(
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo1.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo1.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode1.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo2.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo2.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode2.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo3.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo3.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode3.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo4.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo4.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode4.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo5.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo5.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode5.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo6.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo6.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode6.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo7.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo7.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode7.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo8.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo8.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode8.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo9.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo9.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode9.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo10.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo10.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode10.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo11.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo11.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode11.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo12.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo12.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode12.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo13.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo13.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode13.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo14.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo14.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode14.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo15.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo15.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode15.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo16.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo16.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode16.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo17.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo17.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode17.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo18.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo18.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode18.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo19.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo19.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode19.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo20.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo20.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode20.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo21.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo21.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode21.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo22.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo22.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode22.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo23.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo23.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode23.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo24.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo24.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode24.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo25.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo25.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode25.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo26.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo26.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode26.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo27.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo27.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode27.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo28.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo28.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode28.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo29.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo29.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode29.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo30.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo30.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode30.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo31.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo31.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode31.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo32.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo32.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode32.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo33.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo33.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode33.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo34.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo34.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode34.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo35.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo35.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode35.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo36.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo36.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode36.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo37.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo37.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode37.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo38.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo38.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode38.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo39.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo39.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode39.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo40.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo40.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode40.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo41.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo41.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode41.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo42.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo42.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode42.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo43.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo43.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode43.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo44.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo44.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode44.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo45.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo45.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode45.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo46.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo46.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode46.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo47.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo47.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode47.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo48.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo48.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode48.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo49.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo49.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode49.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo50.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo50.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode50.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo51.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo51.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode51.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo52.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo52.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode52.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo53.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo53.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode53.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo54.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo54.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode54.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo55.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo55.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode55.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo56.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo56.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode56.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo57.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo57.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode57.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo58.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo58.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode58.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo59.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo59.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode59.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo60.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo60.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode60.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo61.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo61.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode61.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo62.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo62.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode62.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo63.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo63.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode63.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo64.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo64.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode64.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo65.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo65.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode65.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo66.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo66.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode66.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo67.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo67.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode67.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo68.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo68.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode68.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo69.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo69.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode69.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo70.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo70.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode70.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo71.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo71.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode71.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo72.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo72.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode72.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo73.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo73.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode73.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo74.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo74.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode74.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo75.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo75.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode75.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo76.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo76.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode76.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo77.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo77.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode77.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo78.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo78.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode78.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo79.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo79.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode79.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo80.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo80.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode80.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo81.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo81.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode81.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo82.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo82.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode82.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo83.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo83.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode83.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo84.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo84.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode84.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo85.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo85.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode85.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo86.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo86.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode86.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo87.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo87.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode87.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo88.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo88.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode88.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo89.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo89.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode89.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo90.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo90.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode90.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo91.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo91.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode91.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo92.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo92.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode92.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo93.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo93.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode93.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo94.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo94.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode94.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo95.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo95.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode95.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo96.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo96.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode96.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo97.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo97.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode97.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo98.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo98.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode98.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo99.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo99.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode99.Value, "Table1_Group1"))),
+        (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterExternalDocumentNo100.Value, "Table1_Group1")))) OR (Trim(CStr(Code.EffectiveBodyDocNo(Fields!DocNo.Value, Previous(Fields!DocNo.Value)))) = Trim(CStr(First(Fields!EAFooterAppliesToDocNo100.Value, "Table1_Group1")))), Trim(CStr(First(Fields!EAFooterCompanyCode100.Value, "Table1_Group1")))
+    )
+)</Value>
                                   <Style>
                                     <FontFamily>Courier New</FontFamily>
                                     <FontSize>9pt</FontSize>
@@ -1047,7 +1152,107 @@
 + CStr(First(Fields!EAFooterDueDate97.Value, "Table1_Group1")) + Chr(177)
 + CStr(First(Fields!EAFooterDueDate98.Value, "Table1_Group1")) + Chr(177)
 + CStr(First(Fields!EAFooterDueDate99.Value, "Table1_Group1")) + Chr(177)
-+ CStr(First(Fields!EAFooterDueDate100.Value, "Table1_Group1"))</Value>
++ CStr(First(Fields!EAFooterDueDate100.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode1.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode2.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode3.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode4.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode5.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode6.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode7.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode8.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode9.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode10.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode11.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode12.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode13.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode14.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode15.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode16.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode17.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode18.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode19.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode20.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode21.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode22.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode23.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode24.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode25.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode26.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode27.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode28.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode29.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode30.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode31.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode32.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode33.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode34.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode35.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode36.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode37.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode38.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode39.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode40.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode41.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode42.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode43.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode44.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode45.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode46.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode47.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode48.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode49.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode50.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode51.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode52.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode53.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode54.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode55.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode56.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode57.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode58.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode59.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode60.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode61.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode62.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode63.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode64.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode65.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode66.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode67.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode68.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode69.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode70.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode71.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode72.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode73.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode74.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode75.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode76.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode77.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode78.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode79.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode80.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode81.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode82.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode83.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode84.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode85.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode86.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode87.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode88.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode89.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode90.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode91.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode92.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode93.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode94.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode95.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode96.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode97.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode98.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode99.Value, "Table1_Group1")) + Chr(177)
++ CStr(First(Fields!EAFooterCompanyCode100.Value, "Table1_Group1"))</Value>
                                   <Style>
                                     <Color>Red</Color>
                                   </Style>
@@ -2591,7 +2796,7 @@ ORDER OF</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Disc Taken</Value>
+                      <Value>Company Code</Value>
                       <Style>
                         <FontFamily>Times New Roman</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -3020,7 +3225,7 @@ ORDER OF</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.LogicalFooterDiscount(CStr(ReportItems!FooterInfo.Value), 1)</Value>
+                      <Value>=Code.LogicalFooterCompanyCode(CStr(ReportItems!FooterInfo.Value), 1)</Value>
                       <Style>
                         <FontFamily>Courier New</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -4085,7 +4290,7 @@ ORDER OF</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.LogicalFooterDiscount(CStr(ReportItems!FooterInfo.Value), 2)</Value>
+                      <Value>=Code.LogicalFooterCompanyCode(CStr(ReportItems!FooterInfo.Value), 2)</Value>
                       <Style>
                         <FontFamily>Courier New</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -4114,7 +4319,7 @@ ORDER OF</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.LogicalFooterDiscount(CStr(ReportItems!FooterInfo.Value), 3)</Value>
+                      <Value>=Code.LogicalFooterCompanyCode(CStr(ReportItems!FooterInfo.Value), 3)</Value>
                       <Style>
                         <FontFamily>Courier New</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -4143,7 +4348,7 @@ ORDER OF</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.LogicalFooterDiscount(CStr(ReportItems!FooterInfo.Value), 4)</Value>
+                      <Value>=Code.LogicalFooterCompanyCode(CStr(ReportItems!FooterInfo.Value), 4)</Value>
                       <Style>
                         <FontFamily>Courier New</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -4172,7 +4377,7 @@ ORDER OF</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.LogicalFooterDiscount(CStr(ReportItems!FooterInfo.Value), 5)</Value>
+                      <Value>=Code.LogicalFooterCompanyCode(CStr(ReportItems!FooterInfo.Value), 5)</Value>
                       <Style>
                         <FontFamily>Courier New</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -4201,7 +4406,7 @@ ORDER OF</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.LogicalFooterDiscount(CStr(ReportItems!FooterInfo.Value), 6)</Value>
+                      <Value>=Code.LogicalFooterCompanyCode(CStr(ReportItems!FooterInfo.Value), 6)</Value>
                       <Style>
                         <FontFamily>Courier New</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -4230,7 +4435,7 @@ ORDER OF</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.LogicalFooterDiscount(CStr(ReportItems!FooterInfo.Value), 7)</Value>
+                      <Value>=Code.LogicalFooterCompanyCode(CStr(ReportItems!FooterInfo.Value), 7)</Value>
                       <Style>
                         <FontFamily>Courier New</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -4259,7 +4464,7 @@ ORDER OF</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.LogicalFooterDiscount(CStr(ReportItems!FooterInfo.Value), 8)</Value>
+                      <Value>=Code.LogicalFooterCompanyCode(CStr(ReportItems!FooterInfo.Value), 8)</Value>
                       <Style>
                         <FontFamily>Courier New</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -4288,7 +4493,7 @@ ORDER OF</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.LogicalFooterDiscount(CStr(ReportItems!FooterInfo.Value), 9)</Value>
+                      <Value>=Code.LogicalFooterCompanyCode(CStr(ReportItems!FooterInfo.Value), 9)</Value>
                       <Style>
                         <FontFamily>Courier New</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -4317,7 +4522,7 @@ ORDER OF</Value>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>=Code.LogicalFooterDiscount(CStr(ReportItems!FooterInfo.Value), 10)</Value>
+                      <Value>=Code.LogicalFooterCompanyCode(CStr(ReportItems!FooterInfo.Value), 10)</Value>
                       <Style>
                         <FontFamily>Courier New</FontFamily>
                         <FontSize>9pt</FontSize>
@@ -5352,6 +5557,48 @@ Public Function LogicalFooterDiscount( _
     ' Stub2LineDiscount_1_ through Stub2LineDiscount_10_
     ' occupy FooterInfo positions 53 through 62.
     Return FooterNumber(footerValue, 52 + sourceRow)
+End Function
+
+Public Function LogicalFooterCompanyCode( _
+    ByVal footerValue As String, _
+    ByVal logicalRow As Integer _
+) As String
+
+    Dim currentInvoiceNbr As String =
+        LogicalFooterInvoiceNbr(footerValue, logicalRow)
+
+    If currentInvoiceNbr = "" Then
+        Return ""
+    End If
+
+    ' FooterInfo positions:
+    '   115-214 = RefNbr mappings 1-100
+    '   215-314 = Invoice Nbr mappings 1-100
+    '   415-514 = Company Code mappings 1-100
+    For mappingRow As Integer = 1 To 100
+        Dim refNbr As String =
+            FooterText(footerValue, 114 + mappingRow)
+
+        Dim invoiceNbr As String =
+            FooterText(footerValue, 214 + mappingRow)
+
+        Dim companyCode As String =
+            FooterText(footerValue, 414 + mappingRow)
+
+        If String.Equals(
+            currentInvoiceNbr,
+            invoiceNbr,
+            StringComparison.OrdinalIgnoreCase
+        ) OrElse String.Equals(
+            currentInvoiceNbr,
+            refNbr,
+            StringComparison.OrdinalIgnoreCase
+        ) Then
+            Return companyCode
+        End If
+    Next
+
+    Return ""
 End Function
 
 Public Function LogicalFooterNetCheckAmount( _
@@ -6960,6 +7207,306 @@ End Function
         </Field>
         <Field Name="EAFooterDueDate100">
           <DataField>EAFooterDueDate100</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode1">
+          <DataField>EAFooterCompanyCode1</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode2">
+          <DataField>EAFooterCompanyCode2</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode3">
+          <DataField>EAFooterCompanyCode3</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode4">
+          <DataField>EAFooterCompanyCode4</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode5">
+          <DataField>EAFooterCompanyCode5</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode6">
+          <DataField>EAFooterCompanyCode6</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode7">
+          <DataField>EAFooterCompanyCode7</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode8">
+          <DataField>EAFooterCompanyCode8</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode9">
+          <DataField>EAFooterCompanyCode9</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode10">
+          <DataField>EAFooterCompanyCode10</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode11">
+          <DataField>EAFooterCompanyCode11</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode12">
+          <DataField>EAFooterCompanyCode12</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode13">
+          <DataField>EAFooterCompanyCode13</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode14">
+          <DataField>EAFooterCompanyCode14</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode15">
+          <DataField>EAFooterCompanyCode15</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode16">
+          <DataField>EAFooterCompanyCode16</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode17">
+          <DataField>EAFooterCompanyCode17</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode18">
+          <DataField>EAFooterCompanyCode18</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode19">
+          <DataField>EAFooterCompanyCode19</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode20">
+          <DataField>EAFooterCompanyCode20</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode21">
+          <DataField>EAFooterCompanyCode21</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode22">
+          <DataField>EAFooterCompanyCode22</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode23">
+          <DataField>EAFooterCompanyCode23</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode24">
+          <DataField>EAFooterCompanyCode24</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode25">
+          <DataField>EAFooterCompanyCode25</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode26">
+          <DataField>EAFooterCompanyCode26</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode27">
+          <DataField>EAFooterCompanyCode27</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode28">
+          <DataField>EAFooterCompanyCode28</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode29">
+          <DataField>EAFooterCompanyCode29</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode30">
+          <DataField>EAFooterCompanyCode30</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode31">
+          <DataField>EAFooterCompanyCode31</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode32">
+          <DataField>EAFooterCompanyCode32</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode33">
+          <DataField>EAFooterCompanyCode33</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode34">
+          <DataField>EAFooterCompanyCode34</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode35">
+          <DataField>EAFooterCompanyCode35</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode36">
+          <DataField>EAFooterCompanyCode36</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode37">
+          <DataField>EAFooterCompanyCode37</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode38">
+          <DataField>EAFooterCompanyCode38</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode39">
+          <DataField>EAFooterCompanyCode39</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode40">
+          <DataField>EAFooterCompanyCode40</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode41">
+          <DataField>EAFooterCompanyCode41</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode42">
+          <DataField>EAFooterCompanyCode42</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode43">
+          <DataField>EAFooterCompanyCode43</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode44">
+          <DataField>EAFooterCompanyCode44</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode45">
+          <DataField>EAFooterCompanyCode45</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode46">
+          <DataField>EAFooterCompanyCode46</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode47">
+          <DataField>EAFooterCompanyCode47</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode48">
+          <DataField>EAFooterCompanyCode48</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode49">
+          <DataField>EAFooterCompanyCode49</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode50">
+          <DataField>EAFooterCompanyCode50</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode51">
+          <DataField>EAFooterCompanyCode51</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode52">
+          <DataField>EAFooterCompanyCode52</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode53">
+          <DataField>EAFooterCompanyCode53</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode54">
+          <DataField>EAFooterCompanyCode54</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode55">
+          <DataField>EAFooterCompanyCode55</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode56">
+          <DataField>EAFooterCompanyCode56</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode57">
+          <DataField>EAFooterCompanyCode57</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode58">
+          <DataField>EAFooterCompanyCode58</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode59">
+          <DataField>EAFooterCompanyCode59</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode60">
+          <DataField>EAFooterCompanyCode60</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode61">
+          <DataField>EAFooterCompanyCode61</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode62">
+          <DataField>EAFooterCompanyCode62</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode63">
+          <DataField>EAFooterCompanyCode63</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode64">
+          <DataField>EAFooterCompanyCode64</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode65">
+          <DataField>EAFooterCompanyCode65</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode66">
+          <DataField>EAFooterCompanyCode66</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode67">
+          <DataField>EAFooterCompanyCode67</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode68">
+          <DataField>EAFooterCompanyCode68</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode69">
+          <DataField>EAFooterCompanyCode69</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode70">
+          <DataField>EAFooterCompanyCode70</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode71">
+          <DataField>EAFooterCompanyCode71</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode72">
+          <DataField>EAFooterCompanyCode72</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode73">
+          <DataField>EAFooterCompanyCode73</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode74">
+          <DataField>EAFooterCompanyCode74</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode75">
+          <DataField>EAFooterCompanyCode75</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode76">
+          <DataField>EAFooterCompanyCode76</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode77">
+          <DataField>EAFooterCompanyCode77</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode78">
+          <DataField>EAFooterCompanyCode78</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode79">
+          <DataField>EAFooterCompanyCode79</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode80">
+          <DataField>EAFooterCompanyCode80</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode81">
+          <DataField>EAFooterCompanyCode81</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode82">
+          <DataField>EAFooterCompanyCode82</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode83">
+          <DataField>EAFooterCompanyCode83</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode84">
+          <DataField>EAFooterCompanyCode84</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode85">
+          <DataField>EAFooterCompanyCode85</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode86">
+          <DataField>EAFooterCompanyCode86</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode87">
+          <DataField>EAFooterCompanyCode87</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode88">
+          <DataField>EAFooterCompanyCode88</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode89">
+          <DataField>EAFooterCompanyCode89</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode90">
+          <DataField>EAFooterCompanyCode90</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode91">
+          <DataField>EAFooterCompanyCode91</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode92">
+          <DataField>EAFooterCompanyCode92</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode93">
+          <DataField>EAFooterCompanyCode93</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode94">
+          <DataField>EAFooterCompanyCode94</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode95">
+          <DataField>EAFooterCompanyCode95</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode96">
+          <DataField>EAFooterCompanyCode96</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode97">
+          <DataField>EAFooterCompanyCode97</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode98">
+          <DataField>EAFooterCompanyCode98</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode99">
+          <DataField>EAFooterCompanyCode99</DataField>
+        </Field>
+        <Field Name="EAFooterCompanyCode100">
+          <DataField>EAFooterCompanyCode100</DataField>
         </Field>
       </Fields>
       <Query>
