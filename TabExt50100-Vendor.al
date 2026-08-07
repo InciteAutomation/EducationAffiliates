@@ -6,5 +6,9 @@ tableextension 50100 "Vendor Extension" extends "Vendor"
         {
             Caption = 'Synced to Jaggaer';
         }
+        field(50101; "ActiveFile"; Boolean)
+        {
+            Caption = 'Active File Present';
+        }
     }
 }

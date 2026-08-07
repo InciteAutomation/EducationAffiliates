@@ -24,6 +24,7 @@ pageextension 50111 "CreateNewVendor-PA" extends "Vendor Card"
                     Items: JsonArray;
                     jVal: JsonValue;
                     Url: Text;
+                    EnvironmentInformation: Codeunit "Environment Information";
 
                 begin
                     /*
@@ -46,8 +47,14 @@ pageextension 50111 "CreateNewVendor-PA" extends "Vendor Card"
                         payloadObject.add('Status', 'New');
                     end;
 
+                    if EnvironmentInformation.IsSandbox() then
+                        Url := 'https://default40a96b834e8b4d89969e20067e90f4.ac.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/13/workflows/7f6e171c53e74322a12de6192726b494/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=7FiL7-mv8UFZrUGFoUyCP0ut3nI0S8-9k8xBoJti9iY'
+                    else
+                        Url := 'https://default40a96b834e8b4d89969e20067e90f4.ac.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/56f13df5ff7d403183785a22a7954609/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=4giehh7ZKxvCSYwN0DGSqglMfBOdHKNmcUAbnaHWsaY';
 
-                    Url := 'https://default40a96b834e8b4d89969e20067e90f4.ac.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/56f13df5ff7d403183785a22a7954609/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=4giehh7ZKxvCSYwN0DGSqglMfBOdHKNmcUAbnaHWsaY';
+                    if Url = '' then
+                        exit;
+
                     payloadObject.WriteTo(payloadString);
                     Content.WriteFrom(payloadString);
                     Content.GetHeaders(Headers);

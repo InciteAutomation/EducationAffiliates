@@ -33,7 +33,10 @@ page 50110 "Vendor API"
                 {
                     Caption = 'Posting Date';
                 }
-
+                field("activeFile"; Rec.ActiveFile)
+                {
+                    Caption = 'Active File Present';
+                }
             }
         }
     }
