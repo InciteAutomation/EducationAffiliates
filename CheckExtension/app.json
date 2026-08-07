@@ -1,0 +1,32 @@
+{
+    "id": "20b5ce88-a5f1-43f9-aef3-d6f48ecd2d7d",
+    "name": "EducationAffiliates Checks",
+    "publisher": "Incite Automation",
+    "version": "1.0.0.0",
+    "brief": "Custom check report extension for Education Affiliates",
+    "description": "Contains the Education Affiliates custom check report extension and RDLC layout.",
+    "privacyStatement": "",
+    "EULA": "",
+    "help": "",
+    "url": "",
+    "logo": "",
+    "dependencies": [],
+    "screenshots": [],
+    "platform": "1.0.0.0",
+    "application": "27.0.0.0",
+    "idRanges": [
+        {
+            "from": 50200,
+            "to": 50249
+        }
+    ],
+    "resourceExposurePolicy": {
+        "allowDebugging": true,
+        "allowDownloadingSource": true,
+        "includeSourceInSymbolFile": true
+    },
+    "runtime": "16.0",
+    "features": [
+        "NoImplicitWith"
+    ]
+}
