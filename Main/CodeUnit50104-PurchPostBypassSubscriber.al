@@ -72,6 +72,87 @@ codeunit 50104 "Purch. Dim. Bypass Events"
     end;
 
 
+
+    // ---------------------------------------------------------
+    // FINANCIAL VOID - INITIAL BANK/CHECK LINE
+    // ---------------------------------------------------------
+
+    // Subscriber to bypass the dimensions for voiding checks
+    [EventSubscriber(
+        ObjectType::Codeunit,
+        Codeunit::CheckManagement,
+        'OnFinancialVoidCheckOnBeforePostVoidCheckLine',
+        '',
+        false,
+        false)]
+    local procedure BeforePostVoidCheckLine(
+        var GenJournalLine: Record "Gen. Journal Line";
+        var CheckLedgEntry: Record "Check Ledger Entry";
+        var BankAccLedgEntry2: Record "Bank Account Ledger Entry")
+    var
+        BypassContext: Codeunit "Purch. Dim. Bypass Context";
+    begin
+        BypassContext.EnableForJournal();
+    end;
+
+
+    [EventSubscriber(
+        ObjectType::Codeunit,
+        Codeunit::CheckManagement,
+        'OnFinancialVoidCheckOnAfterPostVoidCheckLine',
+        '',
+        false,
+        false)]
+    local procedure AfterPostVoidCheckLine(
+        var GenJournalLine: Record "Gen. Journal Line";
+        var GenJnlPostLine: Codeunit "Gen. Jnl.-Post Line")
+    var
+        BypassContext: Codeunit "Purch. Dim. Bypass Context";
+    begin
+        BypassContext.Disable();
+    end;
+
+
+    // ---------------------------------------------------------
+    // FINANCIAL VOID - VENDOR/BALANCING LINE
+    // ---------------------------------------------------------
+
+    [EventSubscriber(
+        ObjectType::Codeunit,
+        Codeunit::CheckManagement,
+        'OnFinancialVoidCheckOnBeforePostBalAccLine',
+        '',
+        false,
+        false)]
+    local procedure BeforePostVoidBalanceLine(
+        var GenJournalLine: Record "Gen. Journal Line";
+        CheckLedgerEntry: Record "Check Ledger Entry")
+    var
+        BypassContext: Codeunit "Purch. Dim. Bypass Context";
+    begin
+        BypassContext.EnableForJournal();
+    end;
+
+
+    [EventSubscriber(
+        ObjectType::Codeunit,
+        Codeunit::CheckManagement,
+        'OnFinancialVoidCheckOnAfterPostBalAccLine',
+        '',
+        false,
+        false)]
+    local procedure AfterPostVoidBalanceLine(
+        var GenJournalLine: Record "Gen. Journal Line";
+        CheckLedgerEntry: Record "Check Ledger Entry";
+        var GenJnlPostLine: Codeunit "Gen. Jnl.-Post Line")
+    var
+        BypassContext: Codeunit "Purch. Dim. Bypass Context";
+    begin
+        BypassContext.Disable();
+    end;
+
+    // END OF CHECK VOID
+
     local procedure ContainsVendor(TableID: array[10] of Integer): Boolean
     var
         Index: Integer;
