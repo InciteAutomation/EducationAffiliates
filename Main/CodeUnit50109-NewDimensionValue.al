@@ -20,7 +20,7 @@ codeunit 50109 "New Dimension Value Subscriber"
         FlowUrl: Text;
         EnvironmentInformation: Codeunit "Environment Information";
     begin
-        if EnvironmentInformation.IsSandbox() then
+        if (EnvironmentInformation.IsSandbox()) and (EnvironmentInformation.GetEnvironmentName() = 'Sandbox') then
             FlowUrl := 'https://default40a96b834e8b4d89969e20067e90f4.ac.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/30/workflows/047714e5d63041bbafce17a15c5970ba/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=aezesA5C4mAfpshtrpUqBhCkuqiN6himniWz0rHRn6E'
         else
             FlowUrl := '';
@@ -40,7 +40,8 @@ codeunit 50109 "New Dimension Value Subscriber"
 
         if Http.Post(FlowUrl, Content, Resp) then begin
             if Resp.IsSuccessStatusCode() then
-                Message('Sent new %1 dimension to Jaggaer with value: %2 - %3', DimensionValue."Dimension Code", DimensionValue.Code, DimensionValue.Name)
+                //Message('Sent new %1 dimension to Jaggaer with value: %2 - %3', DimensionValue."Dimension Code", DimensionValue.Code, DimensionValue.Name)
+                exit
             else
                 Error(
                     'Flow call failed. Status %1. Response: %2',
