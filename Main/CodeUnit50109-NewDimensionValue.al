@@ -1,26 +1,116 @@
 codeunit 50109 "New Dimension Value Subscriber"
 {
     [EventSubscriber(ObjectType::Table, Database::"Dimension Value", 'OnAfterInsertEvent', '', false, false)]
-    local procedure DimensionValueOnAfterInsert(var Rec: Record "Dimension Value"; RunTrigger: Boolean)
+    local procedure DimensionValueOnAfterInsert(
+        var Rec: Record "Dimension Value";
+        RunTrigger: Boolean)
     begin
-        if (Rec."Dimension Code" <> 'COMPANY') and (Rec."Dimension Code" <> 'DEGREE') and (Rec."Dimension Code" <> 'DEPARTMENT') and (Rec."Dimension Code" <> 'SHIFT') and (Rec."Dimension Code" <> 'PROGRAM') then
+        if not IsSupportedDimension(Rec."Dimension Code") then
             exit;
 
-        TriggerDimensionFlow(Rec);
+        TriggerDimensionFlow(
+            Rec."Dimension Code",
+            Rec.Code,
+            Rec.Name
+        );
     end;
 
-    local procedure TriggerDimensionFlow(DimensionValue: Record "Dimension Value")
+    [EventSubscriber(ObjectType::Table, Database::"Dimension Value", 'OnAfterModifyEvent', '', false, false)]
+    local procedure DimensionValueOnAfterModify(
+        var Rec: Record "Dimension Value";
+        var xRec: Record "Dimension Value";
+        RunTrigger: Boolean)
+    begin
+        if not IsSupportedDimension(Rec."Dimension Code") then
+            exit;
+
+        if not DimensionValueChanged(Rec, xRec) then
+            exit;
+
+        TriggerDimensionFlow(
+            Rec."Dimension Code",
+            Rec.Code,
+            Rec.Name
+        );
+    end;
+
+    [EventSubscriber(ObjectType::Table, Database::"G/L Account", 'OnAfterInsertEvent', '', false, false)]
+    local procedure GLAccountOnAfterInsert(
+        var Rec: Record "G/L Account";
+        RunTrigger: Boolean)
+    begin
+        TriggerDimensionFlow(
+            'Chart of Accounts',
+            Rec."No.",
+            Rec.Name
+        );
+    end;
+
+    [EventSubscriber(ObjectType::Table, Database::"G/L Account", 'OnAfterModifyEvent', '', false, false)]
+    local procedure GLAccountOnAfterModify(
+        var Rec: Record "G/L Account";
+        var xRec: Record "G/L Account";
+        RunTrigger: Boolean)
+    begin
+        if not GLAccountChanged(Rec, xRec) then
+            exit;
+
+        TriggerDimensionFlow(
+            'Chart of Accounts',
+            Rec."No.",
+            Rec.Name
+        );
+    end;
+
+    local procedure IsSupportedDimension(DimensionCode: Code[20]): Boolean
+    begin
+        case DimensionCode of
+            'COMPANY',
+            'DEGREE',
+            'DEPARTMENT',
+            'SHIFT',
+            'PROGRAM':
+                exit(true);
+        end;
+
+        exit(false);
+    end;
+
+    local procedure DimensionValueChanged(
+        DimensionValue: Record "Dimension Value";
+        OldDimensionValue: Record "Dimension Value"): Boolean
+    begin
+        exit(
+            (DimensionValue."Dimension Code" <> OldDimensionValue."Dimension Code") or
+            (DimensionValue.Code <> OldDimensionValue.Code) or
+            (DimensionValue.Name <> OldDimensionValue.Name)
+        );
+    end;
+
+    local procedure GLAccountChanged(
+        GLAccount: Record "G/L Account";
+        OldGLAccount: Record "G/L Account"): Boolean
+    begin
+        exit(
+            (GLAccount."No." <> OldGLAccount."No.") or
+            (GLAccount.Name <> OldGLAccount.Name)
+        );
+    end;
+
+    local procedure TriggerDimensionFlow(
+        DimensionCode: Text;
+        ValueCode: Text;
+        ValueName: Text)
     var
         Http: HttpClient;
         Content: HttpContent;
         Headers: HttpHeaders;
         Resp: HttpResponseMessage;
         JsonBody: JsonObject;
-        ResponseText: Text;
         FlowUrl: Text;
         EnvironmentInformation: Codeunit "Environment Information";
     begin
-        if (EnvironmentInformation.IsSandbox()) and (EnvironmentInformation.GetEnvironmentName() = 'Sandbox') then
+        if EnvironmentInformation.IsSandbox() then
             FlowUrl := 'https://default40a96b834e8b4d89969e20067e90f4.ac.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/30/workflows/047714e5d63041bbafce17a15c5970ba/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=aezesA5C4mAfpshtrpUqBhCkuqiN6himniWz0rHRn6E'
         else
             FlowUrl := '';
@@ -28,9 +118,9 @@ codeunit 50109 "New Dimension Value Subscriber"
         if FlowUrl = '' then
             exit;
 
-        JsonBody.Add('dimensionCode', DimensionValue."Dimension Code");
-        JsonBody.Add('code', DimensionValue.Code);
-        JsonBody.Add('name', DimensionValue.Name);
+        JsonBody.Add('dimensionCode', DimensionCode);
+        JsonBody.Add('code', ValueCode);
+        JsonBody.Add('name', ValueName);
 
         Content.WriteFrom(Format(JsonBody));
 
@@ -40,15 +130,20 @@ codeunit 50109 "New Dimension Value Subscriber"
 
         if Http.Post(FlowUrl, Content, Resp) then begin
             if Resp.IsSuccessStatusCode() then
-                //Message('Sent new %1 dimension to Jaggaer with value: %2 - %3', DimensionValue."Dimension Code", DimensionValue.Code, DimensionValue.Name)
-                exit
+                Message(
+                    'Sent %1 value to Power Automate: %2 - %3',
+                    DimensionCode,
+                    ValueCode,
+                    ValueName
+                )
             else
                 Error(
-                    'Flow call failed. Status %1. Response: %2',
+                    'Power Automate call failed. Status %1. Response: %2',
                     Resp.HttpStatusCode(),
-                    GetResponseText(Resp));
+                    GetResponseText(Resp)
+                );
         end else
-            Error('Could not reach flow endpoint.');
+            Error('Could not reach Power Automate endpoint.');
     end;
 
     local procedure GetResponseText(
